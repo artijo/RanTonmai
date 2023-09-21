@@ -20,6 +20,27 @@ document.addEventListener(
                 addClass(".menu-toggle, .nav-mobile, .site-header", "active");
             }
         }
+        if (event.target.matches(".m-sub1")) {
+            if (event.target.classList.contains("active")) {
+                removeClass(".item-m-sub1", "active");
+            } else {
+                addClass(".item-m-sub1", "active");
+            }
+        }
+        if (event.target.matches(".m-sub2")) {
+            if (event.target.classList.contains("active")) {
+                removeClass(".item-m-sub2", "active");
+            } else {
+                addClass(".item-m-sub2", "active");
+            }
+        }
+        if (event.target.matches(".m-sub3")) {
+            if (event.target.classList.contains("active")) {
+                removeClass(".item-m-sub1-2", "active");
+            } else {
+                addClass(".item-m-sub1-2", "active");
+            }
+        }
     },
     false
 );
