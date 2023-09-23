@@ -200,6 +200,39 @@ strong {
             margin-left: 40px;
         }
     }
+    .search {
+        display: flex;
+        margin-top: 20px;
+        input {
+            border: 1px solid $green;
+            border-radius: 40px;
+            padding: 8px 16px;
+            width: 100%;
+            font-size: 14px;
+            &:focus {
+                outline: none;
+            }
+        }
+        button {
+            border: none;
+            background: transparent;
+            padding: 10px 10px;
+            position: absolute;
+            right: 65px;
+            img {
+                width: 20px;
+                height: auto;
+                display: block;
+                margin: auto 0;
+            }
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
 }
 .nav-desktop {
     display: none;
