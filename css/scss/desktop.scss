@@ -209,6 +209,9 @@ p {
 .pagination {
     clear: both;
 }
+.page {
+    min-height: calc(100vh - 220px);
+}
 //shop page
 .shop {
     .fillter {
@@ -223,6 +226,10 @@ p {
         grid-template-columns: repeat(3, 1fr);
       
     }
+}
+//login page
+.login-area {
+    margin: auto;
 }
 
 .site-footer {

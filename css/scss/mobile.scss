@@ -406,6 +406,9 @@ strong {
         height: auto;
     }
 }
+.page {
+    min-height: calc(100vh - 351px);
+}
 //shop page
 .shop {
     width: 100%;
@@ -452,6 +455,50 @@ strong {
         width: 100%;
         padding-bottom: 20px;
     }
+}
+//login page
+.login-area, .register-area {
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    form {
+        display: flex;
+        flex-direction: column;
+        label {
+            margin-bottom: 0;
+        }
+        input[type="email"],input[type="password"],input[type="text"],input[type="number"],input[type="tel"],input[type="date"] {
+            border: 1px solid #dcdfe5;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            height: 40px;
+            &:focus {
+                outline: none;
+            }
+        }
+        .gender, .policy {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        .btn {
+            display: block;
+            margin: 0 auto;
+            border: none;
+            max-width: 150px;
+        }
+        .help {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+    }
+}
+.req {
+    color: red;
 }
 
 .site-footer {
