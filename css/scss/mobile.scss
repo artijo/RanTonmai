@@ -456,8 +456,8 @@ strong {
         padding-bottom: 20px;
     }
 }
-//login page
-.login-area, .register-area {
+//login, register page
+.login-area, .register-area, .forgot-area, .new-password-area {
     padding: 20px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     max-width: 400px;
@@ -494,11 +494,19 @@ strong {
             display: flex;
             justify-content: space-between;
             margin-bottom: 10px;
+            &.send-otp {
+                justify-content: flex-end;
+            }
         }
     }
 }
 .req {
     color: red;
+}
+.alert-box {
+    background-color: #f8bfbf;
+    padding: 10px 20px;
+    border: 2px solid #f00;
 }
 
 .site-footer {
