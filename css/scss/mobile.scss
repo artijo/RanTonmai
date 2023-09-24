@@ -44,7 +44,7 @@ strong {
 .site-header {
     padding-top: 10px;
     padding-bottom: 10px;
-    position: absolute;
+    position: relative;
     width: 100%;
     z-index: 900;
     .logo {
@@ -240,7 +240,7 @@ strong {
 
 .sec-hero {
     text-align: center;
-    padding-top: 70px;
+    padding-top: 32px;
     .info {
         max-width: 400px;
         width: 80%;
@@ -277,9 +277,13 @@ strong {
     .price {
         color: $green;
         font-size: 16px;
-        b {
+        b,span {
             font-size: 1.625rem;
         }
+    }
+    .buy {
+        background-color: $beige;
+        padding: 5px 10px;
     }
 }
 .sec-contact {
@@ -354,6 +358,193 @@ strong {
     }
     small {
         display: block;
+    }
+}
+.page-head {
+    position: relative;
+    padding: 30px 0;
+    text-align: center;
+    .title {
+        font-size: 28px;
+    }
+    .breadcrumbs {
+        position: absolute;
+        bottom: 0;
+        a {
+            color: $green;
+            font-weight: $heading-font-weight;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    a {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        width: 50px;
+        height: 50px;
+        color: $green;
+        &:hover {
+            background-color: $green;
+            color: #fff;
+            border-radius: 50%;
+        }
+    }
+    .active {
+        background-color: $green;
+        color: #fff;
+    }
+    img {
+        width: 20px;
+        height: auto;
+    }
+}
+.page {
+    min-height: calc(100vh - 351px);
+}
+//shop page
+.shop {
+    width: 100%;
+    .fillter {
+        width: 100%;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        .price {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        input[type="number"] {
+            min-width: 80px;
+            max-width: 400px;
+            height: 40px;
+        }
+        .catgory {
+            input[type="checkbox"] {
+                margin-right: 10px;
+            }
+        }
+        input[type="submit"] {
+            display: block;
+            border: none;
+            background: $primary;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 40px;
+            font-weight: $heading-font-weight;
+            margin: 0 auto;
+            margin-top: 10px;
+            &:hover {
+                cursor: pointer;
+            }
+            &:active {
+                transform: scale(0.94);
+                box-shadow: none;
+            }
+        }
+    }
+    .shopping {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+//login, register, forgot page
+.login-area, .register-area, .forgot-area, .new-password-area {
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    form {
+        display: flex;
+        flex-direction: column;
+        label {
+            margin-bottom: 0;
+        }
+        input[type="email"],input[type="password"],input[type="text"],input[type="number"],input[type="tel"],input[type="date"] {
+            border: 1px solid #dcdfe5;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            height: 40px;
+            &:focus {
+                outline: none;
+            }
+        }
+        .gender, .policy {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        .btn {
+            display: block;
+            margin: 0 auto;
+            border: none;
+            max-width: 150px;
+        }
+        .help {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            &.send-otp {
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+.req {
+    color: red;
+}
+.alert-box {
+    background-color: #f8bfbf;
+    padding: 10px 20px;
+    border: 2px solid #f00;
+}
+//confirm-payment page
+.confirm-area {
+    max-width: 756px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        .name-input, .tel-input, .shop-number-input, .price-input, .date-time, .file {
+            width: 100%;
+            label {
+                display: block;
+            }
+        }
+        input[type="text"],input[type="number"],input[type="tel"],input[type="datetime-local"],input[type="file"] {
+            border: 1px solid #dcdfe5;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            height: 40px;
+            width: 100%;
+            &:focus {
+                outline: none;
+            }
+
+        }
+        .bank {
+            .kp-bank {
+                display: flex;
+                gap: 1em;
+                align-items: center;
+                img {
+                    width: 50px;
+                }
+            }
+        }
     }
 }
 

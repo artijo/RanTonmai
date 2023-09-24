@@ -145,14 +145,14 @@ p {
 }
 
 .sec-hero {
-    height: 100vh;
+    height: calc(100vh - 80px);
     position: relative;
     min-height: 600px;
     max-height: 800px;
     .info {
         position: absolute;
         max-width: 480px;
-        top: 20%;
+        top: 10%;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -206,8 +206,57 @@ p {
         font-size: 16px;
     }
 }
+.pagination {
+    clear: both;
+}
+.page {
+    min-height: calc(100vh - 220px);
+}
+//shop page
+.shop {
+    .fillter {
+        float: left;
+        width: 25%;
+    }
+    .shopping {
+        float: left;
+        width: 75%;
+    }
+    .product-items {
+        grid-template-columns: repeat(3, 1fr);
+      
+    }
+}
+//login page
+.login-area {
+    margin: auto;
+}
+//confirm-payment page
+.confirm-area{
+    form {
+        .name-input, .tel-input, .shop-number-input, .price-input, .date-time, .file {
+            width: 50%;
+            padding: 0 6px;
+        }
+        .bank {
+            width: 100%;
+            padding: 0 6px;
+            margin-bottom: 10px;
+            .detail {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
 
 .site-footer {
+    clear: both;
     text-align: left;
     padding: 40px 0;
     .s-container {
