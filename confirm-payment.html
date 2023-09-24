@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="utf-8" />
+        <title>ร้านต้นไม้ - โครงสร้างเว็บ Web Design Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+        <link rel="stylesheet" type="text/css" href="css/desktop.css" media="(min-width: 992px)" />
+    </head>
+
+    <body>
+        <header class="site-header">
+            <div class="s-container">
+                <a href="#" class="logo">
+                    <img src="img/logo-green.svg" alt="logo" />
+                    <h1 class="title">ร้านต้นไม้</h1>
+                </a>
+                <div class="nav-mobile">
+                    <ul>
+                        <li><a href="#">สินค้า</a><span class="more"><img src="img/chevron-compact-down.svg" alt="more" class="m-sub1"></span>
+                            <ul class="item-m-sub1">
+                                <li><a href="#">ต้นไม้</a><span class="more"><img src="img/chevron-compact-down.svg" alt="more" class="m-sub2"></span>
+                                    <ul class="item-m-sub2">
+                                        <li><a href="#">ต้นไม้ในบ้าน</a></li>
+                                        <li><a href="#">ต้นไม้นอกบ้าน</a></li>
+                                        <li><a href="#">ต้นไม้ประดับ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">กระถางต้นไม้</a></li>
+                                <li><a href="#">เมล็ดพันธ์</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">การสั่งซื้อ</a><span class="more"><img src="img/chevron-compact-down.svg" alt="more" class="m-sub3"></span>
+                            <ul class="item-m-sub1-2">
+                                <li><a href="#">แจ้งชำระเงิน</a></li>
+                                <li><a href="#">ตรวจสอบสถานะออเดอร์</a></li>
+                                <li><a href="#">นโยบายทางธุระกิจ</a></li>
+                                <li><a href="#">นโยบายความเป็นส่วนตัว</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ข่าวสาร</a></li>
+                        <li><a href="#">ติดต่อเรา</a></li>
+                    </ul>
+                    <form action="#" method="get" class="search">
+                        <input type="text" name="search" placeholder="ค้นหา" />
+                        <button type="submit"><img src="img/search.svg" alt="search" /></button>
+                    </form>
+                </div>
+                <form action="" method="get" class="search _desktop">
+                    <input type="text" name="search" placeholder="ค้นหา" />
+                    <button type="submit"><img src="img/search.svg" alt="search" /></button>
+                </form>
+                <div class="nav-desktop">
+                    <ul>
+                        <li class="d-sub-1"><a href="#">สินค้า<i class="arrow down"></i></a>
+                            <ul class="d-sub-1-item">
+                                <li class="d-sub-2"><a href="#">ต้นไม้<i class="arrow right"></i></a>
+                                    <ul class="d-sub-2-item">
+                                        <li><a href="#">ต้นไม้ในบ้าน</a></li>
+                                        <li><a href="#">ต้นไม้นอกบ้าน</a></li>
+                                        <li><a href="#">ต้นไม้ประดับ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">กระถางต้นไม้</a></li>
+                                <li><a href="#">เมล็ดพันธ์</a></li>
+                            </ul>
+                        </li>
+                        <li class="d-sub-1"><a href="#">การสั่งซื้อ<i class="arrow down"></i></a>
+                            <ul class="d-sub-1-item">
+                                <li><a href="#">แจ้งชำระเงิน</a></li>
+                                <li><a href="#">ตรวจสอบสถานะออเดอร์</a></li>
+                                <li><a href="#">นโยบายทางธุระกิจ</a></li>
+                                <li><a href="#">นโยบายความเป็นส่วนตัว</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ข่าวสาร</a></li>
+                        <li><a href="#">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="cart">
+                    <img src="img/basket.svg" alt="shopping cart" />
+                </a>
+                <a href="#" class="account">
+                    <img src="img/user.svg" alt="my account">
+                </a>
+                <div class="menu-toggle"><b></b></div>
+            </div>
+        </header>
+
+        <main class="site-body">
+            <div class="s-container">
+                <div class="page">
+                    <div class="page-head">
+                        <h2>แจ้งชำระเงิน</h2>
+                        <p class="breadcrumbs"><a href="./">หน้าแรก</a> > <a href="./confirm-payment.html">แจ้งชำระเงิน</a></p>
+                    </div>
+                    <div class="confirm-area">
+                        <form action="#" method="post">
+                            <div class="name-input">
+                                <label for="name">ชื่อ<span class="req">*</span></label>
+                                <input type="text" name="name" id="name" placeholder="ชื่อ" />
+                            </div>
+                            <div class="tel-input">
+                                <label for="tel">เบอร์โทรศัพท์<span class="req">*</span></label>
+                                <input type="tel" name="tel" id="tel" placeholder="เบอร์โทรศัพท์" />
+                            </div>
+                            <div class="shop-number-input">
+                                <label for="shop-number">เลขที่คำสั่งซื้อ</label>
+                                <input type="text" name="shop-number" id="shop-number" placeholder="เลขที่คำสั่งซื้อ" />
+                            </div>
+                            <div class="price-input">
+                                <label for="price">จำนวนเงิน<span class="req">*</span></label>
+                                <input type="text" name="price" id="price" placeholder="จำนวนเงิน" />
+                            </div>
+                            <div class="bank">
+                                <label for="bank">บัญชีธนาคาร</label> <br/>
+                                <div class="kp-bank">
+                                    <input type="radio" name="kp-bank" checked/>
+                                    <img src="img/kbank.webp" alt="kp-bank" />
+                                    <div class="detail">
+                                        <p>ธนาคารกสิกรไทย</p>
+                                        <p>เลขที่บัญชี <strong>123-4-56789-0</strong></p>
+                                        <p>บริษัท ร้านต้นไม้ จำกัด</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="date-time">
+                                <label for="date-time">วันที่และเวลาที่โอน<span class="req">*</span></label>
+                                <input type="datetime-local" name="date-time" id="date-time" />
+                            </div>
+                            <div class="file">
+                                <label for="file">แนบหลักฐานการโอน<span class="req">*</span></label>
+                                <input type="file" name="file" id="file" />
+                            </div>
+                            <input type="submit" value="แจ้งชำระเงิน" class="btn btn-main" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="s-container">
+                <a href="#" class="logo">
+                    <img src="img/logo-white.svg" alt="logo" />
+                </a>
+                <div class="company">
+                    <strong class="title">บริษัท ร้านต้นไม้ จำกัด</strong>
+                    <p>
+                        123 หมู่ 4 ถ. รักษ์โลก แขวงต้นไม้ <br />
+                        เขตในบ้าน ขอนแก่น 40000
+                    </p>
+                    <p>
+                        โทร
+                        <strong><a href="tel:+66812345678">081-234-5678</a></strong> • ไลน์
+                        <strong><a href="http://line.me/ti/p/@linebizth" target="_blank">Tonmai</a></strong>
+                        <br />
+                        จันทร์ - เสาร์ 10:00 - 19:00 น.
+                    </p>
+                </div>
+                <div class="more">
+                    <div class="social">
+                        <a href="#"><img src="img/instagram.svg" alt="instagram"/></a>
+                        <a href="#"><img src="img/facebook.svg" alt="facebook"/></a>
+                        <a href="#"><img src="img/twitter.svg" alt="twitter"/></a>
+                        <a href="#"><img src="img/line.svg" alt="line"/></a>
+                    </div>
+                    <div class="copyright">© 2023. All rights reserved</div>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

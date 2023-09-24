@@ -456,7 +456,7 @@ strong {
         padding-bottom: 20px;
     }
 }
-//login, register page
+//login, register, forgot page
 .login-area, .register-area, .forgot-area, .new-password-area {
     padding: 20px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -507,6 +507,45 @@ strong {
     background-color: #f8bfbf;
     padding: 10px 20px;
     border: 2px solid #f00;
+}
+//confirm-payment page
+.confirm-area {
+    max-width: 756px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        .name-input, .tel-input, .shop-number-input, .price-input, .date-time, .file {
+            width: 100%;
+            label {
+                display: block;
+            }
+        }
+        input[type="text"],input[type="number"],input[type="tel"],input[type="datetime-local"],input[type="file"] {
+            border: 1px solid #dcdfe5;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+            height: 40px;
+            width: 100%;
+            &:focus {
+                outline: none;
+            }
+
+        }
+        .bank {
+            .kp-bank {
+                display: flex;
+                gap: 1em;
+                align-items: center;
+                img {
+                    width: 50px;
+                }
+            }
+        }
+    }
 }
 
 .site-footer {
