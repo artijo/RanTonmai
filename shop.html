@@ -46,7 +46,7 @@
                         <button type="submit"><img src="img/search.svg" alt="search" /></button>
                     </form>
                 </div>
-                <form action="#" method="get" class="search _desktop">
+                <form action="" method="get" class="search _desktop">
                     <input type="text" name="search" placeholder="ค้นหา" />
                     <button type="submit"><img src="img/search.svg" alt="search" /></button>
                 </form>
@@ -89,74 +89,76 @@
 
         <main class="site-body">
             <div class="s-container">
-                <div class="sec-hero">
-                    <div class="info">
-                        <h2 class="sec-title">ร้านต้นไม้</h2>
-                        <p>
-                            เราเข้าใจว่าต้นไม้เป็นสิ่งที่มีความสำคัญในชีวิตของเรา ไม่ว่าจะเป็นการกรอกล่องความรักในห้องนั้น ๆ หรือสวนใจที่มีให้พัดพาอารมณ์ที่อ่อนโยน เป็นที่มาของความสงบสุขใจในแต่ละวันของเรา ซึ่งเชื่อว่าทุกคนคงมีต้นไม้ที่เป็นเอกลักษณ์และความหมาว่าคอยสร้างความสุขให้เราคนเดียวโดยเฉพาะ
-                        </p>
-                        <a href="#" class="btn-main">รายละเอียด ›</a>
-                    </div>
-                    <div class="pic">
-                        <img src="img/hero.jpg" alt="Hero Image" />
-                    </div>
+                <div class="page-head">
+                    <h1 class="title">สินค้า</h1>
+                    <p class="breadcrumbs"><a href="./">หน้าแรก</a> > <a href="./shop.html">สินค้า</a></p>
                 </div>
-
-                <div class="sec-products">
-                    <h2 class="sec-title">ต้นไม้ที่เหมาะกับคุณ</h2>
-                    <p>
-                        ต้นไม้ขายดีของเรา หากต้องการคำแนะนำ<br />โทร
-                        <strong><a href="tel:+66812345678">081-234-5678</a></strong> • ไลน์
-                        <strong><a href="http://line.me/ti/p/@linebizth" target="_blank">Tonmai</a></strong>
-                    </p>
-
-                    <div class="product-items">
-                        <div class="product-item">
-                            <img src="img/plant-1.jpg" alt="Plant 1" width="200" height="200" />
-                            <h3 class="title">ต้นไม้หมายเลข 1</h3>
-                            <p class="price"><span>99</span> บาท</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="img/plant-2.jpg" alt="Plant 2" width="200" height="200" />
-                            <h3 class="title">ต้นไม้หมายเลข 2</h3>
-                            <p class="price"><span>99</span> บาท</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="img/plant-3.jpg" alt="Plant 3" width="200" height="200" />
-                            <h3 class="title">ต้นไม้หมายเลข 3</h3>
-                            <p class="price"><span>99</span> บาท</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="img/plant-4.jpg" alt="Plant 4" width="200" height="200" />
-                            <h3 class="title">ต้นไม้หมายเลข 4</h3>
-                            <p class="price"><span>99</span> บาท</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="img/plant-5.jpg" alt="Plant 5" width="200" height="200" />
-                            <h3 class="title">ต้นไม้หมายเลข 5</h3>
-                            <p class="price"><span>99</span> บาท</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="img/plant-6.jpg" alt="Plant 6" width="200" height="200" />
-                            <h3 class="title">ต้นไม้หมายเลข 6</h3>
-                            <p class="price"><span>99</span> บาท</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="img/plant-7.jpg" alt="Plant 7" width="200" height="200" />
-                            <h3 class="title">ต้นไม้หมายเลข 7</h3>
-                            <p class="price"><span>99</span> บาท</p>
-                        </div>
-                        <div class="product-item">
-                            <img src="img/plant-8.jpg" alt="Plant 8" width="200" height="200" />
-                            <h3 class="title">ต้นไม้หมายเลข 8</h3>
-                            <p class="price"><span>99</span> บาท</p>
+                <div class="shop">
+                    <div class="fillter">
+                        <h2 class="title">คัดกรองสินค้า</h2>
+                        <form action="#" method="get">
+                            <label for="price">ราคา</label>
+                            <div class="price">
+                                <input type="number" min="0" name="min" placeholder="ราคาต่ำสุด">
+                                <span>-</span>
+                                <input type="number" name="max" name="max" placeholder="ราคาสูงสุด">
+                            </div>
+                            <label for="catgory">ประเภทต้นไม้</label>
+                            <div class="catgory">
+                                <input type="checkbox" name="catgory" /><span>ต้นไม้มงคล</span><br/>
+                                <input type="checkbox" name="catgory" /><span>ไม้ยืนต้น</span><br/>
+                                <input type="checkbox" name="catgory" /><span>ไม้ดอก</span><br/>
+                                <input type="checkbox" name="catgory" /><span>ไม้ประดับ</span><br/>
+                            </div>
+                            <input type="submit" value="คัดกรอง">
+                        </form>
+                    </div>
+                    <div class="shopping">
+                        <div class="product-items">
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="img/plant-1.jpg" alt="plant-1" />
+                                    <h3 class="title">ต้นไม้มงคล</h3>
+                                    <p class="price"><span>1,000</span> บาท</p>
+                                </a>
+                                <a href="#" class="buy">สั่งซื้อ</a>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="img/plant-2.jpg" alt="plant-2" />
+                                    <h3 class="title">ต้นไม้มงคล</h3>
+                                    <p class="price"><span>1,000</span> บาท</p>
+                                </a>
+                                <a href="#" class="buy">สั่งซื้อ</a>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="img/plant-3.jpg" alt="plant-3" />
+                                    <h3 class="title">ต้นไม้มงคล</h3>
+                                    <p class="price"><span>1,000</span> บาท</p>
+                                </a>
+                                <a href="#" class="buy">สั่งซื้อ</a>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="img/plant-4.jpg" alt="plant-4" />
+                                    <h3 class="title">ต้นไม้มงคล</h3>
+                                    <p class="price"><span>1,000</span> บาท</p>
+                                </a>
+                                <a href="#" class="buy">สั่งซื้อ</a>
+                            </div>
                         </div>
                     </div>
-
-                    <a href="#" class="btn-main">ดูต้นไม้ทั้งหมด ›</a>
-                </div>
-
-                <div class="sec-contact">
+                    <div class="pagination">
+                        <a href="#" class="prev"><img src="img/chevron-left.svg" alt="prev" /></a>
+                        <a href="#" class="page">1</a>
+                        <a href="#" class="page">2</a>
+                        <a href="#" class="page">3</a>
+                        <a href="#" class="page">4</a>
+                        <a href="#" class="page">5</a>
+                        <a href="#" class="next"><img src="img/chevron-right.svg" alt="next" /></a>
+                    </div>
+                    <div class="sec-contact">
                     <h2 class="sec-title">ติดต่อเรา</h2>
                     <div class="contact-items">
                         <a href="tel:+66812345678" class="contact-item" target="_blank">
@@ -227,6 +229,6 @@
             </div>
         </footer>
 
-        <script src="script.js"></script>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
