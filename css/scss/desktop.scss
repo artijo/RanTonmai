@@ -51,6 +51,7 @@ p {
                 display: block;
                 padding: 10px 15px;
                 color: $text;
+                font-weight: $heading-font-weight;
                 &:hover {
                     color: $green;
                 }
@@ -249,6 +250,71 @@ p {
                 justify-content: space-between;
                 p {
                     margin: 0;
+                }
+            }
+        }
+    }
+}
+//account page
+.account-area {
+    float: right;
+    width: 75%;
+    margin-top: 20px;
+    .pic {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        img {
+            width: 20%;
+            height: auto;
+        }
+        .name {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0;
+        }
+    }
+}
+//account nav
+.account-nav-m {
+    display: none;
+}
+.account-nav-d {
+    display: block;
+    float: left;
+    max-width: 25%;
+    text-align: left;
+    padding: 0;
+    margin-top: 20px;
+    ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        list-style: none;
+        padding: 2px;
+        background-color: $primary;
+        li {
+            width: 100%;
+            a {
+                color: #fff;
+                display: block;
+                padding: 15px 20px;
+                &:hover {
+                    color: #fff;
+                    background-color: $primary;
+                }
+                &.active {
+                    background-color: $green;
+                }
+                &.current {
+                    margin: 2px;
+                    background-color: $beige;
+                    color: $text;
                 }
             }
         }
