@@ -320,6 +320,18 @@ p {
         }
     }
 }
+.product-block{
+    display: flex;
+    gap:50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .picture{
+        width: 50%;
+        .favorite{
+            width: 35px;
+        }
+    }
+}
 
 .site-footer {
     clear: both;
