@@ -774,6 +774,10 @@ table {
             margin: 10px auto;
             display: block;
         }
+        .btn-submit:hover{
+            background-color: $brown;
+            cursor: pointer;
+        }
     }
 }
     

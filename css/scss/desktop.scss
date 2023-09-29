@@ -399,6 +399,11 @@ p {
             border: 0;
             display: block;
         }
+        
+        .btn-submit:hover{
+            background-color: $brown;
+            cursor: pointer;
+        }
     }
 }
 
