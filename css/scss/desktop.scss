@@ -332,7 +332,29 @@ p {
         }
     }
 }
+// check status order without login
+.check-storder{
+    margin-top: 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    border-radius: 2px;
+    padding: 20px;
+    p{
+        margin-left: 20px;
+    }
+    .check-st{
+        width: auto;
+        .ordertrack{
+            width: 300px;
+        }
+        form{
+            display: flex;
+            gap: 50px;
+            justify-content: space-between;
+        }
+    }
+}
 
+// site-footer
 .site-footer {
     clear: both;
     text-align: left;
