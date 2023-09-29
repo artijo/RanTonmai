@@ -737,11 +737,88 @@ table {
     strong{
         margin-left: 20px;
     }
-}
     
+}
 
  
 
+
+//cart page
+.cart-area{
+    width: 100%;
+    margin-bottom: 20px;
+    .cart-g {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+        .cart-item {
+            display: flex;
+            width: 100%;
+            padding: 16px;
+            height: 125px;
+            border: 1px solid #dcdfe5;
+            border-radius: 5px;
+            position: relative;
+            img {
+                width: 75px;
+            }
+            .cart-item-detail {
+                margin-left: 20px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .quantity {
+                position: absolute;
+                bottom: 5px;
+                right: 16px;
+                input {
+                    width: 50px;
+                    text-align: center;
+                }
+                .btn {
+                    width: 40px;
+                    height: 40px;
+                    border: none;
+                    &.plus, &.minus {
+                        background-color: $green;
+                        color: #fff;
+                        &:hover {
+                            background-color: $green;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .bin {
+                width: 15px;
+                position: absolute;
+                bottom: 16px;
+                left: 16px;
+            }
+        }
+    }
+    .check-out {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        .total-title {
+            display: flex;
+            justify-content: space-between;
+        }
+        .list{
+            .list-item{
+                display: flex;
+                justify-content: space-between;
+              
+            }
+        }
+        .btn {
+            display: block;
+            margin-left: auto;
+        }
+    }
+}
 .site-footer {
     background: $primary;
     color: #fff;

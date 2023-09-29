@@ -344,6 +344,18 @@ p {
     margin: 0 auto;
     margin-top: 20px;
 }
+//cart page
+.cart-area {
+    .cart-g {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .check-out {
+        max-width: calc(100%/2 - 10px);
+        margin-left: auto;
+    }
+}
 
 .site-footer {
     clear: both;
