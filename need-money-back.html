@@ -24,6 +24,7 @@
                                         <li><a href="#">ต้นไม้ในบ้าน</a></li>
                                         <li><a href="#">ต้นไม้นอกบ้าน</a></li>
                                         <li><a href="#">ต้นไม้ประดับ</a></li>
+                                        <li><a href="#">ต้นไม้ดอก</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">กระถางต้นไม้</a></li>
@@ -59,6 +60,7 @@
                                         <li><a href="#">ต้นไม้ในบ้าน</a></li>
                                         <li><a href="#">ต้นไม้นอกบ้าน</a></li>
                                         <li><a href="#">ต้นไม้ประดับ</a></li>
+                                        <li><a href="#">ต้นไม้ดอก</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">กระถางต้นไม้</a></li>
@@ -89,70 +91,58 @@
 
         <main class="site-body">
             <div class="s-container">
-                <div class="page account">
+                <div class="page Need-money-back">
                     <div class="page-head">
-                        <h2 class="title">สมาชิก</h2>
-                        <p class="breadcrumbs"><a href="./">หน้าแรก</a> > <a href="./account.html">สมาชิก</a></p>
+                        <h1 class="title">ฟอร์มขอ คืนเงิน/คืนสินค้า</h1>
+                        <p class="breadcrumbs"><a href="./">หน้าแรก</a> > <a href="./account.html">โปรไฟล์</a> > <a href="./need-money-back.html">คืนเงิน/คืนสินค้า</a></p>
                     </div>
-                    <nav class="account-nav-d">
-                        <ul>
-                            <li><a href="" class="current">หน้าหลัก</a></li>
-                            <li><a href="">การซื้อของฉัน</a></li>
-                            <li><a href="">สินค้าที่ถูกใจ</a></li>
-                            <li><a href="./need-money-back.html">คืนเงิน/คืนสินค้า</a></li>
-                            <li><a href="">ตั้งค่าบัญชี</a></li>
-                            <li><a href="">ที่อยู่จัดส่ง</a></li>
-                            <li><a href="">ตั้งค่าการชำระเงิน</a></li>
-                        </ul>
-                    </nav>
-                    <div class="account-area">
-                        <div class="pic">
-                            <img src="img/male-03.jpg" alt="user" />
-                            <div class="name">
-                                <h3>สมชาย ใจดี</h3>
-                                <a href="#" class="btn btn-alt">ออกจากระบบ</a>
-                            </div>
+                    <div class="Form">
+                        <!-- My layout -->
+                        <div class="box">
+                            <h3>คืนเงิน</h3>
+                            <form action="#">
+                                <div class="item">
+                                    <h5><label for="Order-number1">เลขคำสั้งซื้อ</label></h5>
+                                    <input type="text" name="Order-number" id="Order-number1" required>
+                                </div>
+                                <div class="item">
+                                    <h5><label for="phone1">เบอร์โทรศัพท์</label></h5>
+                                    <input type="tel" name="phone" id="phone1" pattern="^0[1-9]\d{7}$" required>
+                                </div>
+                                <div class="item">
+                                    <h5><label for="files1">หลักฐานสินค้าชำรุด</label></h5>
+                                    <input type="file" name="files" class="files" id="files1" required>
+                                </div>
+                                <div>
+                                    <p class="text-important">
+                                        <span class="asterisk">*</span>การคืนเงินสามารถขอคืนเงินได้กรณีที่สินค้าชำรุดเท่านั้น
+                                        เมื่อผ่านการพิจารณา เราจะแจ้งผลผ่านหน้า รายละเอียดคำสั่งซื้อให้คุณพร้อมกับขอหมายเลขบัญชีเพื่อโอนเงินคืนให้คุณ
+                                    </p>
+                                </div>
+                                
+                             
+                               
+                                <input type="submit" class="btn-submit" value="ของเงินคืน">
+                            </form>
                         </div>
-                        <nav class="account-nav-m">
-                            <ul>
-                                <li><a href="" class="current">หน้าหลัก</a></li>
-                                <li><a href="">การซื้อของฉัน</a></li>
-                                <li><a href="">สินค้าที่ถูกใจ</a></li>
-                                <li><a href="">คืนเงิน/คืนสินค้า</a></li>
-                                <li><a href="">ตั้งค่าบัญชี</a></li>
-                                <li><a href="">ที่อยู่จัดส่ง</a></li>
-                                <li><a href="">ตั้งค่าการชำระเงิน</a></li>
-                            </ul>
-                        </nav>
-                        <div class="release-order">
-                            <h3>คำสั่งซื้อล่าสุด</h3>
-                            <table>
-                                <tr>
-                                    <th>รหัสคำสั่งซื้อ</th>
-                                    <th>วันที่สั่งซื้อ</th>
-                                    <th colspan="2">สถานะ</th>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">#123456789</a></td>
-                                    <td>01/01/2564</td>
-                                    <td>รอการชำระเงิน</td>
-                                    <td><a href="#">รายละเอียด</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">#123456788</a></td>
-                                    <td>01/01/2564</td>
-                                    <td>กำลังจัดส่ง</td>
-                                    <td><a href="#">รายละเอียด</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">#123456780</a></td>
-                                    <td>01/01/2564</td>
-                                    <td>จัดส่งแล้ว</td>
-                                    <td><a href="#">รายละเอียด</a></td>
-                                </tr>
-                            </table>
+
+                        <div class="box">
+                            <h3>คืนสินค้า</h3>
+                            <form action="#">
+                                <h5><label for="Order-number2">เลขคำสั้งซื้อ</label></h5>
+                                <input type="text" name="Order-number" id="Order-number2" required>
+                                <h5><label for="phone2">เบอร์โทรศัพท์</label></h5>
+                                <input type="tel" name="phone" id="phone2" pattern="^0[1-9]\d{7}$" required>
+                                <h5><label for="files2">หลักฐานสินค้าที่ยังไม่ผ่านการใช้งาน</label></h5>
+                                <input type="file" name="files" class="files" id="files2" required>
+                                <h5><label for="cause">สาเหตุ</label></h5>
+                                <input type="text" id="cause" name="cause">
+                                <input type="submit" class="btn-submit" value="คืนสินค้า">
+                            </form>
+
                         </div>
                     </div>
+                   
                 </div>
             </div>
         </main>
