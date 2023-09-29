@@ -100,44 +100,60 @@
                         <!-- My layout -->
                         <div class="box">
                             <h3>คืนเงิน</h3>
-                            <form action="#">
-                                <div class="item">
+                            <form action="#" class="Form-box">
+                                <div class="item item1">
                                     <h5><label for="Order-number1">เลขคำสั้งซื้อ</label></h5>
                                     <input type="text" name="Order-number" id="Order-number1" required>
                                 </div>
-                                <div class="item">
+                                <div class="item item2">
                                     <h5><label for="phone1">เบอร์โทรศัพท์</label></h5>
                                     <input type="tel" name="phone" id="phone1" pattern="^0[1-9]\d{7}$" required>
                                 </div>
-                                <div class="item">
+                                <div class="item item3">
                                     <h5><label for="files1">หลักฐานสินค้าชำรุด</label></h5>
                                     <input type="file" name="files" class="files" id="files1" required>
                                 </div>
-                                <div>
+                                <div class="p-item">
                                     <p class="text-important">
                                         <span class="asterisk">*</span>การคืนเงินสามารถขอคืนเงินได้กรณีที่สินค้าชำรุดเท่านั้น
                                         เมื่อผ่านการพิจารณา เราจะแจ้งผลผ่านหน้า รายละเอียดคำสั่งซื้อให้คุณพร้อมกับขอหมายเลขบัญชีเพื่อโอนเงินคืนให้คุณ
                                     </p>
                                 </div>
+                                <div class="item-btn-layout">
+                                    <div class="item-btn">
+                                        <input type="submit" class="btn-submit" value="ขอเงินคืน">
+                                    </div>
+                                </div>
                                 
-                             
-                               
-                                <input type="submit" class="btn-submit" value="ของเงินคืน">
                             </form>
                         </div>
 
                         <div class="box">
                             <h3>คืนสินค้า</h3>
-                            <form action="#">
-                                <h5><label for="Order-number2">เลขคำสั้งซื้อ</label></h5>
-                                <input type="text" name="Order-number" id="Order-number2" required>
-                                <h5><label for="phone2">เบอร์โทรศัพท์</label></h5>
-                                <input type="tel" name="phone" id="phone2" pattern="^0[1-9]\d{7}$" required>
-                                <h5><label for="files2">หลักฐานสินค้าที่ยังไม่ผ่านการใช้งาน</label></h5>
-                                <input type="file" name="files" class="files" id="files2" required>
-                                <h5><label for="cause">สาเหตุ</label></h5>
-                                <input type="text" id="cause" name="cause">
-                                <input type="submit" class="btn-submit" value="คืนสินค้า">
+                            <form action="#" class="Form-box">
+                                <div class="item item1">
+                                    <h5><label for="Order-number2">เลขคำสั้งซื้อ</label></h5>
+                                    <input type="text" name="Order-number" id="Order-number2" required>
+                                </div>
+                                <div class="item item2">
+                                    <h5><label for="phone2">เบอร์โทรศัพท์</label></h5>
+                                    <input type="tel" name="phone" id="phone2" pattern="^0[1-9]\d{7}$" required>
+                                </div>
+                                <div class="item item3">
+                                    <h5><label for="files2">หลักฐานสินค้าที่ยังไม่ผ่านการใช้งาน</label></h5>
+                                    <input type="file" name="files" class="files" id="files2" required>
+                                </div>
+                                <div class="item item4">
+                                    <h5><label for="cause">สาเหตุ</label></h5>
+                                    <input type="text" id="cause" name="cause">
+                                </div>
+                                <div class="item-btn-layout">
+                                    <div class="item-btn">
+                                        <input type="submit" class="btn-submit" value="คืนสินค้า">
+                                    </div>
+                                </div>
+                                
+                               
                             </form>
 
                         </div>
