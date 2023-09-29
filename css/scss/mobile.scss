@@ -780,7 +780,38 @@ table {
         }
     }
 }
-    
+
+
+//account-purchasing.html
+
+.account-area{
+    .content{
+        margin-bottom: 20px;
+        .container-byme{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap:10px;
+            .item{
+                width: 100%;
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+                position: relative;
+                .icon-heart{
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 5px;
+                    right: 5px;
+                    margin: 0 10px 5px 0;
+                }
+            }
+            .info{
+                display: block;
+                margin-left: 10px;
+            }
+            
+           
+        }
+    }
+}
 
  
 
