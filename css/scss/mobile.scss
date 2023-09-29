@@ -679,6 +679,25 @@ table {
        }
     }
 }
+// check status order without login
+.check-storder{
+    .check-st{
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        .ordertrack{
+            border-radius: 5px;
+        }
+        .conf-track{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+           margin-top: 20px;
+           margin-bottom: 20px;
+        }
+    }
+}
+
 // status-order
 .status-order{
     background-color: beige;
@@ -819,6 +838,7 @@ table {
         }
     }
 }
+// site-footer
 .site-footer {
     background: $primary;
     color: #fff;
