@@ -650,10 +650,70 @@ input {
         border-radius: 0;
        }
     }
+}
+// status-order
+.status-order{
+    background-color: beige;
+    padding: 20px;
+    .st-block{
+        display: flex;
+        justify-content: center;
+        
+        .st-icon{
+            width: calc(100%/3);
+            text-align: center;
+            display: block;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;  
+            .st-iconblock{
+                border-radius: 50%;
+                background-color: lightgreen;
+                height: fit-content;
+                width: fit-content;
+                margin: auto auto;
+                padding: 5px;
+                
+            }
+            .uncom{
+                background-color: #fff;
+            }
+            }
+            .arrow{
+                margin: auto 0;
+                img{
+                    width: 40px;
+                }
+            }
+       
+        }
+           .st-com {
+                display: block;
+                position: relative;
+                z-index: 2;
+                width: 50px;
+                margin: 0 auto;
+            }
+
+        }
+.detai-status{
+    border: 1px solid gray;
+    padding: 5px;
+    line-height: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    span{
+        margin-left: 20px;
+    }
+    strong{
+        margin-left: 20px;
+    }
+}
     
 
+ 
 
-}
 .site-footer {
     background: $primary;
     color: #fff;
