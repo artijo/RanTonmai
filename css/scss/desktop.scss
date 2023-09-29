@@ -277,6 +277,12 @@ p {
             margin-bottom: 0;
         }
     }
+    .release-order {
+        margin-top: 20px;
+        table {
+            display: table;
+        }
+    }
 }
 //account nav
 .account-nav-m {
@@ -351,7 +357,12 @@ p {
             gap: 50px;
             justify-content: space-between;
         }
-    }
+    }}
+// status-detail
+.st-outer{
+    width: 759px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 // site-footer
