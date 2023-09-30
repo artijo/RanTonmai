@@ -903,6 +903,32 @@ table {
             }
         }
     }
+// contact
+.contact-block{
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .contact-content1{
+        p{
+            text-indent: 1em;
+            line-height: 1.5em;
+        }
+    }
+    .contact-content2{
+        p{
+            text-indent: 1em;
+            line-height: 1.5em;
+        }
+    }
+} 
+.google-map{
+  margin: 20px auto 20px auto;
+  background-color: #ddd;
+  .map{
+    display: block;
+    margin: 0 auto;
+  }
+
 }
 
  

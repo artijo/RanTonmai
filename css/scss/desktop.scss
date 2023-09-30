@@ -385,6 +385,29 @@ p {
         display: flex;
     }
 }
+// contact us
+.contact-block{
+    width: 750px;
+    margin: 0 auto;
+    margin-top: 20px;
+    .contact-content2{
+        display: flex;
+        gap: 20px;
+        .ct{
+            width: 500px;
+        }
+    }
+}
+.google-map{
+    display: block;
+    margin: 20px auto;
+    width: 800px;
+    background-color: #ddd;
+    .map{
+        display: block;
+        margin: 0 auto;
+    }
+}
 // site-footer
 
 //need-monet-back.html
