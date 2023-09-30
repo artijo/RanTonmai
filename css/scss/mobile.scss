@@ -786,6 +786,127 @@ table {
     }
 }
 
+//need-money-back.html
+
+.Need-money-back{
+    .Form .box{
+        border-bottom: 2px solid #cccccc;
+        padding-bottom: 10px;
+        margin:20px 0px;
+        h5{
+            margin-bottom: 0;
+        }
+        input{
+            border-radius: 5px;
+            border-color: black;
+            width: 100%;
+            margin-bottom:5px;
+        }
+
+        .text-important{
+            margin: 5px auto;
+            span.asterisk{
+                font-size: 1.25em;
+                color:#B46100;
+            }
+        }
+        .btn-submit{
+            text-align: center;
+            color: white;
+            background-color: #B46100;
+            width: 100px;
+            height: 45px;
+            border-radius: 50px;
+            border: 0;
+            margin: 10px auto;
+            display: block;
+        }
+        .btn-submit:hover{
+            background-color: $brown;
+            cursor: pointer;
+        }
+    }
+}
+
+
+//account-purchasing.html
+
+.account-area{
+    .content{
+        margin-bottom: 20px;
+        .container-byme{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap:10px;
+            .item{
+                width: 100%;
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+                position: relative;
+                .icon-heart{
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 5px;
+                    right: 5px;
+                    margin: 0 10px 5px 0;
+                }
+            }
+            .info{
+                display: block;
+                margin-left: 10px;
+            }
+            
+           
+        }
+    }
+}
+
+//accout-history.html
+.account-area{
+    .container-history{
+        margin-bottom: 20px;
+        .item{
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+            .info{
+                padding: 20px 20px;
+                gap: 10px;
+                width: 100%;
+                grid-template-columns: 40% auto auto;
+                display:grid;
+                img{
+                   border: 1px solid #cccccc;
+                   padding: 20px;
+                   width: 100%;
+                   height: auto;
+                   display: block;
+                }
+                .detail-item-info{
+                    width: 100%; 
+                }
+                .price{
+                    gap: 10px;
+                    justify-content: flex-end;
+                    display: flex;
+                }
+                
+            }
+            .group-of-botton{
+                padding-right:20px ;
+                justify-content: flex-end;
+                display: flex;
+                .btn-order{
+                    border: 2px solid $green;
+                    background: white;
+                    color: black;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+ 
+
 //cart page
 .cart-area{
     width: 100%;
