@@ -756,11 +756,35 @@ table {
     strong{
         margin-left: 20px;
     }
-    
 }
-
- 
-
+// hlep center
+.hlep-content{
+    margin-top: 20px;
+    .hlep-icon{
+        width: fit-content;
+        margin: 0 auto;
+        img{
+            width: 200px;
+          
+            margin-bottom: 20px;
+        }
+        .help-text{
+            display: block;
+            text-align: center;
+        }
+    }
+    .hlep-bt{
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .bt-hp{
+            margin-top: 20px;
+            width: 250px;
+        }
+    }
+}
 
 //cart page
 .cart-area{
