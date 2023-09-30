@@ -858,6 +858,42 @@ table {
     }
 }
 
+// .account-setting.html
+
+.account-area{
+    .pic img{
+        margin-bottom: 20px;
+    }
+    .form-account-setting{
+        form{
+            .container-account-setting{
+                grid-template-columns: auto;
+                display: grid;
+                .input-box{
+                    width: 100%;
+                }
+                
+            } 
+            .gruop-of-botton{
+                gap: 10px;
+                justify-content: center;
+                display: flex;
+                margin: 15px 0;
+                .btn{
+                    width: 100px;
+                    border-radius: 50px;
+                    border: 0;
+                }
+
+                .botton-submit{
+                    background-color: $green;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
  
 
 .site-footer {

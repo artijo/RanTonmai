@@ -389,6 +389,28 @@ p {
     }
 }
 
+.account-area{
+    .block{
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        .form-account-setting{
+            form{
+                .container-account-setting{
+                    gap: 20px;
+                    grid-template-columns: auto auto;
+                    
+                }
+                .gruop-of-botton{
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+    
+}
+
+
 
 
 
