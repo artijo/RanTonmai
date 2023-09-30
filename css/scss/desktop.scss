@@ -364,7 +364,14 @@ p {
     margin: 0 auto;
     margin-top: 20px;
 }
-
+// help center
+.hlep-block{
+    width: 750px;
+    margin: 0 auto;
+    .hlep-content{
+        display: flex;
+    }
+}
 // site-footer
 .site-footer {
     clear: both;
