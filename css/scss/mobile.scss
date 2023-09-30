@@ -894,6 +894,39 @@ table {
     }
 }
 
+.container-devli-address{
+    .container{
+        margin-bottom: 20px;
+        .address-box{
+            grid-template-columns: auto;
+            display: grid;
+        .devil-address{
+            width: 100%;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            .Title-default{
+                color: $link-hover-text;
+                display: inline-block;
+            }
+            .btn-icon{
+                vertical-align: bottom;
+            }
+        }   
+        
+        }
+        .address-add{ 
+            color:$link-hover-text;
+            border: 1px solid $brown;
+            margin: 0 auto;
+            width: 100px;
+            padding:10px;
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
  
 
 .site-footer {
