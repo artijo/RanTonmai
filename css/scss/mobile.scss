@@ -813,6 +813,51 @@ table {
     }
 }
 
+//accout-history.html
+.account-area{
+    .container-history{
+        margin-bottom: 20px;
+        .item{
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+            .info{
+                padding: 20px 20px;
+                gap: 10px;
+                width: 100%;
+                grid-template-columns: 40% auto auto;
+                display:grid;
+                img{
+                   border: 1px solid #cccccc;
+                   padding: 20px;
+                   width: 100%;
+                   height: auto;
+                   display: block;
+                }
+                .detail-item-info{
+                    width: 100%; 
+                }
+                .price{
+                    gap: 10px;
+                    justify-content: flex-end;
+                    display: flex;
+                }
+                
+            }
+            .group-of-botton{
+                padding-right:20px ;
+                justify-content: flex-end;
+                display: flex;
+                .btn-order{
+                    border: 2px solid $green;
+                    background: white;
+                    color: black;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
  
 
 .site-footer {

@@ -369,6 +369,17 @@ p {
     }
 }
 
+.account-area{
+    .container-history{
+        gap:20px;
+        grid-template-columns: auto auto;
+        display: grid;
+        .item{
+            margin-bottom:0;
+        }
+    }
+}
+
 
 .account-area{
     .content{
