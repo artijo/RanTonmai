@@ -87,75 +87,81 @@
 
         <main class="site-body">
             <div class="s-container">
-                <div class="page Need-money-back">
-                    <div class="page-head">
-                        <h1 class="title">ฟอร์มขอ คืนเงิน/คืนสินค้า</h1>
-                        <p class="breadcrumbs"><a href="./">หน้าแรก</a> > <a href="./account.html">โปรไฟล์</a> > <a href="./need-money-back.html">คืนเงิน/คืนสินค้า</a></p>
-                    </div>
-                    <div class="Form">
-                        <!-- My layout -->
-                        <div class="box">
-                            <h3>คืนเงิน</h3>
-                            <form action="#" class="Form-box">
-                                <div class="item item1">
-                                    <h5><label for="Order-number1">เลขคำสั้งซื้อ</label></h5>
-                                    <input type="text" name="Order-number" id="Order-number1" required>
-                                </div>
-                                <div class="item item2">
-                                    <h5><label for="phone1">เบอร์โทรศัพท์</label></h5>
-                                    <input type="tel" name="phone" id="phone1" pattern="^0[0-9]{9}$" required>
-                                </div>
-                                <div class="item item3">
-                                    <h5><label for="files1">หลักฐานสินค้าชำรุด</label></h5>
-                                    <input type="file" name="files" class="files" id="files1" required>
-                                </div>
-                                <div class="p-item">
-                                    <p class="text-important">
-                                        <span class="asterisk">*</span>การคืนเงินสามารถขอคืนเงินได้กรณีที่สินค้าชำรุดเท่านั้น
-                                        เมื่อผ่านการพิจารณา เราจะแจ้งผลผ่านหน้า รายละเอียดคำสั่งซื้อให้คุณพร้อมกับขอหมายเลขบัญชีเพื่อโอนเงินคืนให้คุณ
-                                    </p>
-                                </div>
-                                <div class="item-btn-layout">
-                                    <div class="item-btn">
-                                        <input type="submit" class="btn-submit" value="ขอเงินคืน">
-                                    </div>
-                                </div>
-                                
-                            </form>
-                        </div>
-
-                        <div class="box">
-                            <h3>คืนสินค้า</h3>
-                            <form action="#" class="Form-box">
-                                <div class="item item1">
-                                    <h5><label for="Order-number2">เลขคำสั้งซื้อ</label></h5>
-                                    <input type="text" name="Order-number" id="Order-number2" required>
-                                </div>
-                                <div class="item item2">
-                                    <h5><label for="phone2">เบอร์โทรศัพท์</label></h5>
-                                    <input type="tel" name="phone" id="phone2" pattern="^0[1-9]\d{7}$" required>
-                                </div>
-                                <div class="item item3">
-                                    <h5><label for="files2">หลักฐานสินค้าที่ยังไม่ผ่านการใช้งาน</label></h5>
-                                    <input type="file" name="files" class="files" id="files2" required>
-                                </div>
-                                <div class="item item4">
-                                    <h5><label for="cause">สาเหตุ</label></h5>
-                                    <input type="text" id="cause" name="cause">
-                                </div>
-                                <div class="item-btn-layout">
-                                    <div class="item-btn">
-                                        <input type="submit" class="btn-submit" value="คืนสินค้า">
-                                    </div>
-                                </div>
-                                
-                               
-                            </form>
-
-                        </div>
-                    </div>
-                   
+               <div class="page cart">
+                <div class="page-head">
+                    <h1 class="title">ตะกร้าสินค้า</h1>
+                    <p class="breadcrumbs"><a href="./">หน้าแรก</a> > <a href="./cart.html">ตะกร้าสินค้า</a></p>
                 </div>
+                <div class="cart-area">
+                    <div class="cart-g">
+                        <div class="cart-item">
+                            <img src="./img/plant-1.jpg" alt="plant-1" class="product" />
+                            <div class="cart-item-detail">
+                                <h3 class="title">ต้นไม้ต้นที่ 1</h3>
+                                <p class="price">1,000 <strong>บาท</strong></p>
+                            </div>
+                            <div class="quantity">
+                                <button class="btn minus">-</button>
+                                <input type="text" value="1" />
+                                <button class="btn plus">+</button>
+                            </div>
+                            <img src="./img/trash3.svg" alt="trash" class="bin" />
+                        </div>
+                        <div class="cart-item">
+                            <img src="./img/plant-2.jpg" alt="plant-2" class="product" />
+                            <div class="cart-item-detail">
+                                <h3 class="title">ต้นไม้ต้นที่ 2</h3>
+                                <p class="price">1,000 <strong>บาท</strong></p>
+                            </div>
+                            <div class="quantity">
+                                <button class="btn minus">-</button>
+                                <input type="text" value="1" />
+                                <button class="btn plus">+</button>
+                            </div>
+                            <img src="./img/trash3.svg" alt="trash" class="bin" />
+                        </div>
+                        <div class="cart-item">
+                            <img src="./img/plant-3.jpg" alt="plant-3" class="product" />
+                            <div class="cart-item-detail">
+                                <h3 class="title">ต้นไม้ต้นที่ 3</h3>
+                                <p class="price">1,000 <strong>บาท</strong></p>
+                            </div>
+                            <div class="quantity">
+                                <button class="btn minus">-</button>
+                                <input type="text" value="1" />
+                                <button class="btn plus">+</button>
+                            </div>
+                            <img src="./img/trash3.svg" alt="trash" class="bin" />
+                        </div>
+                    </div>
+                    <div class="check-out">
+                        <h2>สรุปรายการ</h2>
+                        <div class="total-title">
+                            <h3>รายการ</h3>
+                            <h3>ราคา</h3>
+                        </div>
+                        <div class="list">
+                            <div class="list-item">
+                                <p>ต้นไม้ต้นที่ 1 X1</p>
+                                <p>1,000 <strong>บาท</strong></p>
+                            </div>
+                            <div class="list-item">
+                                <p>ต้นไม้ต้นที่ 2 X1</p>
+                                <p>1,000 <strong>บาท</strong></p>
+                            </div>
+                            <div class="list-item">
+                                <p>ต้นไม้ต้นที่ 3 X1</p>
+                                <p>1,000 <strong>บาท</strong></p>
+                            </div>
+                            <div class="list-item">
+                                <h3>รวม</h3>
+                                <p>3,000 <strong>บาท</strong></p>
+                            </div>
+                        </div>
+                        <a href="#" ><button class="btn btn-main">สั่งซื้อสินค้า</button></a>
+                    </div>
+                </div>
+               </div>
             </div>
         </main>
 
