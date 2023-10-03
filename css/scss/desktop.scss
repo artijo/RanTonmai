@@ -338,6 +338,32 @@ p {
         }
     }
 }
+// check status order without login
+.check-storder{
+    margin-top: 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    border-radius: 2px;
+    padding: 20px;
+    p{
+        margin-left: 20px;
+    }
+    .check-st{
+        width: auto;
+        .ordertrack{
+            width: 300px;
+        }
+        form{
+            display: flex;
+            gap: 50px;
+            justify-content: space-between;
+        }
+    }}
+// status-detail
+.st-outer{
+    width: 759px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
 //cart page
 .cart-area {
     .cart-g {
@@ -351,13 +377,134 @@ p {
     }
 }
 
+// help center
+.hlep-block{
+    width: 750px;
+    margin: 0 auto;
+    .hlep-content{
+        display: flex;
+    }
+}
+// contact us
+.contact-block{
+    width: 750px;
+    margin: 0 auto;
+    margin-top: 20px;
+    .contact-content2{
+        display: flex;
+        gap: 20px;
+        .ct{
+            width: 500px;
+        }
+    }
+}
+.google-map{
+    display: block;
+    margin: 20px auto;
+    width: 800px;
+    background-color: #ddd;
+    .map{
+        display: block;
+        margin: 0 auto;
+    }
+}
+// site-footer
+
+//need-monet-back.html
+.Need-money-back{
+
+    .Form-box{
+        display: flex;
+        flex-wrap: wrap;
+        .item.item1,.item.item2,.item.item3,.item.item4{
+            width: 50%;
+            padding: 0 2%;
+        }
+        .item-btn-layout{
+            justify-content: flex-end;
+            margin-right: 2%;
+            display: flex;
+            width: 100%;
+
+        }
+        .p-item{
+            margin: 0 2%;
+        }
+    }
+}
+
+.account-area{
+    .container-history{
+        gap:20px;
+        grid-template-columns: auto auto;
+        display: grid;
+        .item{
+            margin-bottom:0;
+        }
+    }
+}
+
+
+.account-area{
+    .content{
+        .container-byme{
+            grid-template-columns: auto auto auto;
+        }
+    }
+}
+
+.account-area{
+    .block{
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        .form-account-setting{
+            form{
+                .container-account-setting{
+                    gap: 20px;
+                    grid-template-columns: auto auto;
+                    
+                }
+                .gruop-of-botton{
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+    
+}
+
+.container-devli-address{
+    .container{
+        margin-bottom: 20px;
+        .address-box{
+            gap: 20px;
+            grid-template-columns: auto auto;
+            .devil-address{
+                width: 100%;
+                margin-bottom: 0;
+            }
+            .devil-address:nth-last-child(1),.devil-address:nth-last-child(2){
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
 .site-footer {
     clear: both;
     text-align: left;
     padding: 40px 0;
     .s-container {
         display: flex;
-        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
     }
     .logo {
         img {
@@ -365,19 +512,23 @@ p {
         }
     }
     .company {
-        padding-left: 20px;
         position: relative;
         .title {
             font-size: 14px;
             margin: 0;
-        }
-        br {
-            display: none;
+            margin-top: .5rem;
         }
         p {
             margin-bottom: 0;
             font-size: 12px;
         }
+    }
+    .nav-store, .nav-policy, .nav-help {
+        margin-left: auto;
+        ul {
+            padding-left: 0;
+        }
+        
     }
     .more {
         margin-left: auto;
