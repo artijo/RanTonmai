@@ -18,6 +18,7 @@ strong {
     display: inline-block;
     padding: 8px 20px;
     color: #fff;
+    font-family: $heading-font;
     font-weight: $heading-font-weight;
     &:hover {
         color: #fff;
@@ -64,6 +65,7 @@ table {
     th {
         background-color: $seccondary;
         color: #fff;
+        font-family: $heading-font;
         font-weight: $heading-font-weight;
     }
     tr:nth-child(odd) {
@@ -71,6 +73,7 @@ table {
     }
 }
 .site-header {
+    font-family: $heading-font;
     padding-top: 10px;
     padding-bottom: 10px;
     position: relative;
@@ -123,7 +126,7 @@ table {
     b {
         top: 50%;
         margin-top: -0.15em;
-        left: 0.6em;
+        left: -0.2em;
         &,
         &:after,
         &:before {
@@ -139,11 +142,11 @@ table {
             transition: top 0.3s 0.15s, left 0.1s, background-color 0.3s 0.2s, transform 0.2s;
         }
         &:before {
-            left: -0.6em;
+            left: -0.0em;
             top: -0.8em;
         }
         &:after {
-            left: 0.6em;
+            left: -0.0em;
             top: 0.8em;
         }
     }
@@ -188,7 +191,7 @@ table {
         height: calc(100vh - 50px);
         background: #fff;
         opacity: 1;
-        padding: 10px 56px;
+        padding: 10px 32px;
         position: fixed;
     }
     ul {
@@ -247,7 +250,7 @@ table {
             background: transparent;
             padding: 10px 10px;
             position: absolute;
-            right: 65px;
+            right: 38px;
             img {
                 width: 20px;
                 height: auto;
@@ -1092,6 +1095,15 @@ table {
     a {
         color: #fff;
         font-weight: $heading-font-weight;
+    }
+    .nav-store, .nav-policy, .nav-help {
+        text-align: left;
+        ul {
+            list-style: none;
+            li a{
+                font-weight: $body-font-weight;
+            }
+        }
     }
     .social {
         a {

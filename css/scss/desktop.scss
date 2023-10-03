@@ -502,7 +502,9 @@ p {
     padding: 40px 0;
     .s-container {
         display: flex;
-        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
     }
     .logo {
         img {
@@ -510,19 +512,23 @@ p {
         }
     }
     .company {
-        padding-left: 20px;
         position: relative;
         .title {
             font-size: 14px;
             margin: 0;
-        }
-        br {
-            display: none;
+            margin-top: .5rem;
         }
         p {
             margin-bottom: 0;
             font-size: 12px;
         }
+    }
+    .nav-store, .nav-policy, .nav-help {
+        margin-left: auto;
+        ul {
+            padding-left: 0;
+        }
+        
     }
     .more {
         margin-left: auto;
