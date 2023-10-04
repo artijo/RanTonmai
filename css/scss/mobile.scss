@@ -11,6 +11,9 @@ b,
 strong {
     font-weight: $heading-font-weight;
 }
+span.bold {
+    font-weight: $heading-font-weight;
+}
 .btn-main,
 .btn-alt {
     border-radius: 40px;
