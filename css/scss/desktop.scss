@@ -490,7 +490,15 @@ p {
         }
     }
 }
-
+// fqa page
+.fqa-block{
+    display: grid;
+    width: 750px;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding: 10px;
+   
+}
 
 
 
