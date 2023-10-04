@@ -792,8 +792,21 @@ table {
 //need-money-back.html
 
 .Need-money-back{
+
+    .box:first-child{
+        border-bottom: 1.5px solid #cccccc;
+    }
+    
+    .item{
+        #cause{
+            min-height: 130px;
+            max-height: 130px;
+            min-width: 100%;
+            max-width: 100%;
+        }
+    }
     .Form .box{
-        border-bottom: 2px solid #cccccc;
+        // border-bottom: 2px solid #cccccc;
         padding-bottom: 10px;
         margin:20px 0px;
         h5{
@@ -807,7 +820,7 @@ table {
         }
 
         .text-important{
-            margin: 5px auto;
+            
             span.asterisk{
                 font-size: 1.25em;
                 color:#B46100;
@@ -816,7 +829,7 @@ table {
         .btn-submit{
             text-align: center;
             color: white;
-            background-color: #B46100;
+            background-color:$brown;
             width: 100px;
             height: 45px;
             border-radius: 50px;
@@ -842,19 +855,21 @@ table {
             grid-template-columns: auto auto;
             gap:10px;
             .item{
+                background-color: $beige;
                 width: 100%;
                 box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
                 position: relative;
                 .icon-heart{
                     position: absolute;
                     z-index: 1;
-                    bottom: 5px;
+                    bottom: 25px;
                     right: 5px;
                     margin: 0 10px 5px 0;
                 }
             }
             .info{
                 display: block;
+                margin-top: 15px;
                 margin-left: 10px;
             }
             
@@ -869,6 +884,7 @@ table {
         margin-bottom: 20px;
         .item{
             margin-bottom: 20px;
+            background-color: $beige;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
             .info{
                 padding: 20px 20px;
@@ -877,8 +893,8 @@ table {
                 grid-template-columns: 40% auto auto;
                 display:grid;
                 img{
-                   border: 1px solid #cccccc;
-                   padding: 20px;
+                //    border: 1px solid #cccccc;
+                //    padding: 20px;
                    width: 100%;
                    height: auto;
                    display: block;
@@ -894,13 +910,11 @@ table {
                 
             }
             .group-of-botton{
-                padding-right:20px ;
+                padding-right:20px;
                 justify-content: flex-end;
                 display: flex;
                 .btn-order{
-                    border: 2px solid $green;
-                    background: white;
-                    color: black;
+                    
                     font-weight: 400;
                 }
             }
@@ -991,7 +1005,7 @@ table {
             .btn-icon{
                 vertical-align: bottom;
             }
-        }   
+        }  
         
         }
         .address-add{ 
