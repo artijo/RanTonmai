@@ -1082,6 +1082,16 @@ table {
         }
     }
 }
+
+//payment-success
+.payment-success {
+    text-align: center;
+    padding: 30px 0;
+    img {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+}
 // site-footer
 .site-footer {
     background: $primary;
