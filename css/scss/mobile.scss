@@ -1125,6 +1125,27 @@ table {
         }
     }
 }
+//news layout page
+.news-layout {
+    max-width: 759px;
+    margin: 20px auto;
+    .date {
+        font-size: 12px;
+        color: #999;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .news-content{
+        img {
+            margin-bottom: 20px;
+        }
+    }
+}
+.other-news {
+    .title {
+        text-align: center;
+    }
+}
 
 // site-footer
 .site-footer {
