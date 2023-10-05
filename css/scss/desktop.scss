@@ -501,6 +501,17 @@ p {
 }
 
 
+//news page
+.news {
+    margin-top: 20px;
+    .news-g {
+        grid-template-columns: repeat(3, 1fr);
+        img {
+            height: 225px;
+        }
+    }
+}
+
 
 
 
