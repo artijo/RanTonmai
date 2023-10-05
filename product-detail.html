@@ -94,7 +94,7 @@
                 <div class="product-block">
                     <div class="picture">
                         <img src="./img/plant-1.jpg" alt="tree picture"/>
-                        <img src="./img/heart.svg" alt="fav picture" class="favorite"/>
+                        <img src="./img/heart.svg" alt="fav picture" class="favorite" onclick="fav()" />
                     </div>
                     <div class="pt-detail">
                         <h1 class="title">ต้นไม้ที่ 1</h1>
@@ -107,19 +107,45 @@
                 <div class="product-des">
                     <h3>รายละเอียด</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ad distinctio natus sed facilis deleniti perspiciatis ut asperiores vel! Ad mollitia aliquid porro est animi accusantium nemo voluptas eos. Ab.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde rem nemo dicta maiores eaque excepturi sit enim optio quos iure fuga voluptas, voluptatibus eligendi libero inventore doloremque odio magni eum.</p>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
+                <div class="other-product">
+                    <h3>สินค้าอื่นๆ</h3>
+                    <div class="product-items">
+                        <div class="product-item">
+                            <a href="#">
+                                <img src="img/p-1.jpg" alt="pot-1" />
+                                <h3 class="title">กระถางต้นไม้</h3>
+                                <p class="price"><span>100</span> บาท</p>
+                            </a>
+                            <a href="#" class="buy">สั่งซื้อ</a>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <img src="img/p-2.jpg" alt="pot-2" />
+                                <h3 class="title">กระถางต้นไม้</h3>
+                                <p class="price"><span>100</span> บาท</p>
+                            </a>
+                            <a href="#" class="buy">สั่งซื้อ</a>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <img src="img/plant-3.jpg" alt="plant-3" />
+                                <h3 class="title">ต้นไม้ที่ 3</h3>
+                                <p class="price"><span>1,000</span> บาท</p>
+                            </a>
+                            <a href="#" class="buy">สั่งซื้อ</a>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <img src="img/plant-4.jpg" alt="plant-4" />
+                                <h3 class="title">ต้นไม้ที่ 4</h3>
+                                <p class="price"><span>1,000</span> บาท</p>
+                            </a>
+                            <a href="#" class="buy">สั่งซื้อ</a>
+                        </div>
+                    </div>
+                </div>
                </div>
             </div>
         </main>
@@ -180,7 +206,16 @@
                 </div>
             </div>
         </footer>
-
+        <script>
+            function fav() {
+                var x = document.getElementsByClassName("favorite");
+                if(x[0].src.search("img/heart.svg") != -1) {
+                    x[0].src = "img/fav.svg";
+                } else {
+                    x[0].src = "img/heart.svg";
+                }
+            }
+        </script>
         <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
