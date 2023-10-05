@@ -1111,6 +1111,30 @@ table {
     100%  {opacity: 1; margin-bottom: 0px}
 }
 }
+// สรุปคำสั่งซื้อ
+.total-item{
+    .item-block{
+        border: 1px solid $green;
+        margin: 20px 0;
+        padding: 10px;
+        line-height: 2em;
+        border-radius: 5px;
+       
+        .total-price{
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            padding: 5px;
+        }
+        a:hover{
+            color: $link-hover-text;
+        }
+        .imp{
+            display: inline;
+            color:$primary;
+        }
+    }
+}
 // site-footer
 .site-footer {
     background: $primary;
