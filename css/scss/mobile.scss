@@ -1095,6 +1095,37 @@ table {
         margin-bottom: 20px;
     }
 }
+//news page
+.news {
+    .news-g {
+        display: grid;
+        gap: 20px;
+        overflow: hidden;
+        .news-img {
+            img {
+                width: 100%;
+                object-fit: cover;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                    cursor: pointer;
+                    scale: 1.1;
+                }
+            }
+        }
+        
+    }
+    .news-content {
+        text-align: center;
+        background-color: #fff;
+        padding: 10px;
+        margin: -20px 15px 0;
+        position: relative;
+        p {
+            text-align: left;
+        }
+    }
+}
+
 // site-footer
 .site-footer {
     background: $primary;
