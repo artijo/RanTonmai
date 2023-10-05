@@ -430,6 +430,11 @@ table {
             color: #fff;
             border-radius: 50%;
         }
+        &.current {
+            background-color: $green;
+            color: #fff;
+            border-radius: 50%;
+        }
     }
     .active {
         background-color: $green;
