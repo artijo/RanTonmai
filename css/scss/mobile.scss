@@ -456,6 +456,9 @@ table {
             margin-bottom: 10px;
             align-items: center;
         }
+        input {
+            margin-bottom: 0;
+        }
         input[type="number"] {
             min-width: 80px;
             max-width: 400px;
@@ -464,6 +467,8 @@ table {
         .catgory {
             input[type="checkbox"] {
                 margin-right: 10px;
+                height: max-content;
+                height: -moz-max-content;
             }
         }
         input[type="submit"] {
