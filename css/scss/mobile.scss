@@ -430,6 +430,11 @@ table {
             color: #fff;
             border-radius: 50%;
         }
+        &.current {
+            background-color: $green;
+            color: #fff;
+            border-radius: 50%;
+        }
     }
     .active {
         background-color: $green;
@@ -456,6 +461,9 @@ table {
             margin-bottom: 10px;
             align-items: center;
         }
+        input {
+            margin-bottom: 0;
+        }
         input[type="number"] {
             min-width: 80px;
             max-width: 400px;
@@ -464,6 +472,8 @@ table {
         .catgory {
             input[type="checkbox"] {
                 margin-right: 10px;
+                height: max-content;
+                height: -moz-max-content;
             }
         }
         input[type="submit"] {
@@ -683,6 +693,13 @@ table {
        .btn{
         border-radius: 0;
        }
+    }
+}
+.other-product {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    h3 {
+        text-align: center;
     }
 }
 // check status order without login
