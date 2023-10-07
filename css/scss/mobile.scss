@@ -879,6 +879,7 @@ table {
             grid-template-columns: auto auto;
             gap:10px;
             .item{
+                border-radius: $border-radius;
                 background-color: $beige;
                 width: 100%;
                 box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -907,6 +908,7 @@ table {
     .container-history{
         margin-bottom: 20px;
         .item{
+            border-radius: $border-radius;
             margin-bottom: 20px;
             background-color: $beige;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -976,11 +978,15 @@ table {
 // .account-setting.html
 
 .account-area{
+    .block{
+        background-color: $beige;
+    }
     .pic img{
         margin-bottom: 20px;
     }
     .form-account-setting{
         form{
+            
             .container-account-setting{
                 grid-template-columns: auto;
                 display: grid;
@@ -994,12 +1000,6 @@ table {
                 justify-content: center;
                 display: flex;
                 margin: 15px 0;
-                .btn{
-                    width: 100px;
-                    border-radius: 50px;
-                    border: 0;
-                }
-
                 .botton-submit{
                     background-color: $green;
                     color: white;
@@ -1018,28 +1018,31 @@ table {
             grid-template-columns: auto;
             display: grid;
         .devil-address{
+            
             width: 100%;
+            background-color: $beige;
             margin-bottom: 20px;
+            // border: 1px solid #cccccc;
+            border-radius: $border-radius;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
             padding: 20px;
             .Title-default{
-                color: $link-hover-text;
-                display: inline-block;
+                color: $green;
+                font-weight:$heading-font-weight;
+                font-size: 80%;
+                // display: inline-block;
             }
             .btn-icon{
-                vertical-align: bottom;
+                min-width: 20px;
+                vertical-align: middle;
             }
         }  
         
         }
-        .address-add{ 
-            color:$link-hover-text;
-            border: 1px solid $brown;
+        .btn-address{
+            width: max-content;
             margin: 0 auto;
-            width: 100px;
-            padding:10px;
-            display: block;
-            text-align: center;
+            margin-top: 20px;
         }
     }
 }
@@ -1051,6 +1054,7 @@ table {
     .container{
         form{
             fieldset{
+                padding: 20px;
                 margin-bottom: 10px;
                 legend{
                     font-size: 115%;
@@ -1058,14 +1062,17 @@ table {
                     padding-bottom: 10px;
                     margin-bottom: 10px;
                 }
+                .container-grid{
+                    display: grid;
+                    grid-template-columns: repeat(2,auto);
+                    gap:20px;
+                    .text-input:first-child,.item3,.item4{
+                        grid-column: span 2;
+                    }
+                }
             }
             .text-input{
                 input{
-                    width: 100%;
-                }
-                textarea{
-                    border: 1px solid $line;
-                    height: auto;
                     width: 100%;
                 }
             }
@@ -1074,13 +1081,9 @@ table {
                 justify-content: center;
                 gap: 20px;
                 margin-bottom: 10px;
-                
                 button{
                     border: 0;
-                }
-                .submit{
-                   padding: 8px 22px;
-                }
+                }   
                 .cancel{
                     background-color: #cccccc;
                     color: black;
