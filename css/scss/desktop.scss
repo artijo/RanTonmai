@@ -504,6 +504,21 @@ p {
     width: 750px;
     margin: 0 auto;
 }
+// สั่งซื้อ
+.shop-order-block{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    .sd-block2{
+        height: fit-content;
+        strong{
+            display: block;
+            margin: 10px auto;
+            width: fit-content;
+            
+        }
+    }
+}
 
 
 

@@ -529,6 +529,7 @@ table {
                 justify-content: flex-end;
             }
         }
+ 
     }
 }
 .req {
@@ -1132,6 +1133,59 @@ table {
         .imp{
             display: inline;
             color:$primary;
+        }
+    }
+}
+// สั่งซื้อ
+.sd-block1{
+         textarea{
+        border: 1px solid #dcdfe5;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+        &:focus {
+            outline: none;
+        }
+    }
+    .sd-tt{
+        margin-top: 20px;
+    }
+    .form{
+        margin-top: 20px;
+    }
+   input[type="text"],input[type="tel"],textarea{
+    width: 100%;
+   }
+}
+.sd-block2{
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    .bt-shop{
+        display: block;
+        margin: 10px auto;
+    }
+    .choose{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        input[type="radio"]{
+            height: fit-content;
+        }
+    }
+    .item{
+        color: $green-2;
+        font-weight: bold;
+    }
+    .sd-item-block{
+        margin-top: 20px;
+        display: flex;
+        justify-content:space-between;
+        .sd-item{
+            .item{
+                color: $green-2;
+                font-weight: bold;
+            }
         }
     }
 }
