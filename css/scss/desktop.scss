@@ -542,6 +542,28 @@ p {
     }
 }
 
+//help page
+.banner {
+    padding: 4em 0;
+    .banner-text {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+}
+.g {
+    grid-template-columns: repeat(4, 1fr);
+}
+//help-detail
+.nav-help {
+    float: left;
+}
+.content-help {
+    float: right;
+    padding: 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: 0;
+}
 
 
 
