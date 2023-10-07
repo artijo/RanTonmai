@@ -1276,6 +1276,9 @@ table {
     margin: 0 calc(50% - 50vw);
     position: relative;
     overflow: hidden;
+    .banner-text {
+        position: relative;
+    }
     a {
         color: #fff;
     }
