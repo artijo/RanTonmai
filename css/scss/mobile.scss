@@ -1431,6 +1431,44 @@ table {
         }
     }
 }
+//เกี่ยวกับเรา
+.ab-block{
+    margin: 0 auto;
+    width: fit-content;
+    .ab-text{
+        margin-top: 20px;
+        text-indent: 1.5em;
+        &::first-letter{
+            font-size: large;
+        }
+    }
+    .ab-img{
+        img{
+            border-radius: 5px;
+            width: 500px;
+        }
+    }
+}
+.ab-block2{
+    p{
+        margin-top: 10px;
+        text-indent: 1.5em;
+        padding: 5px;
+      
+        &::first-letter{
+            font-size: large;
+        }
+   
+    }
+    img{
+        width: 500px;
+        margin-top: 20px;
+        border-radius: 5px;
+
+    }
+ 
+}
+
 // site-footer
 .site-footer {
     background: $primary;

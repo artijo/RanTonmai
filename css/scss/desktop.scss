@@ -530,6 +530,22 @@ p {
         }
     }
 }
+// เกี่ยวกับเรา
+.about-us{
+    margin: 0 auto;
+    .ab-block{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+    .ab-block2{
+        .ab-block3{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
 
 //news page
 .news {
