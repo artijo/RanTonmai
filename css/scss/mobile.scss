@@ -963,7 +963,11 @@ table {
                 padding-right:20px;
                 justify-content: flex-end;
                 display: flex;
+                
                 .btn-order{
+                    a {
+                        color: #fff;
+                    }
                     
                     font-weight: 400;
                 }
@@ -1426,7 +1430,7 @@ a.back {
     .form{
         margin-top: 20px;
     }
-   input[type="text"],input[type="tel"],textarea{
+   input[type="text"],input[type="tel"],textarea,input[type="email"]{
     width: 100%;
    }
 }
@@ -1514,8 +1518,9 @@ a.back {
     }
     .box{
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: repeat(1,1fr);
         .item{
+            width: 100%;
             margin: 10px auto;
             display: grid;
             grid-template-columns: 25% 75%;
