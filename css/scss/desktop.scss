@@ -564,6 +564,8 @@ p {
         img {
             height: 225px;
         }
+    }
+}
 .payment-setting{
     .head-add,.head-select{
         margin-top: 20px;
@@ -571,10 +573,6 @@ p {
     .box{
         grid-template-columns: repeat(4,1fr);
         gap: 20px;
-        .item{
-            
-        }
-        
     }
     .box:last-child{
         margin-bottom: 50px;
