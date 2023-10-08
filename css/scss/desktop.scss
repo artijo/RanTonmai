@@ -211,7 +211,7 @@ p {
     clear: both;
 }
 .page {
-    min-height: calc(100vh - 366px);
+    min-height: calc(100vh - 342px);
 }
 //shop page
 .shop {
@@ -260,6 +260,23 @@ p {
     float: right;
     width: 75%;
     margin-top: 20px;
+    .pic-ac {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        img {
+            width: 20%;
+            height: auto;
+        }
+        .name {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0;
+        }
+    }
     .pic {
         width: 100%;
         display: flex;
@@ -291,7 +308,7 @@ p {
 .account-nav-d {
     display: block;
     float: left;
-    max-width: 25%;
+    width: 20%;
     text-align: left;
     padding: 0;
     margin-top: 20px;
@@ -304,6 +321,7 @@ p {
         list-style: none;
         padding: 2px;
         background-color: $primary;
+        border-radius: $border-radius;
         li {
             width: 100%;
             a {
@@ -321,6 +339,7 @@ p {
                     margin: 2px;
                     background-color: $beige;
                     color: $text;
+                    border-radius: $border-radius;
                 }
             }
         }
@@ -567,11 +586,13 @@ p {
     }
 }
 .payment-setting{
+    float: right;
+    width: 75%;
     .head-add,.head-select{
         margin-top: 20px;
     }
     .box{
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
         gap: 20px;
     }
     .box:last-child{

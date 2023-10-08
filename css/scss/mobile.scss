@@ -16,7 +16,7 @@ span.bold {
 }
 .btn-main,
 .btn-alt {
-    border-radius: 40px;
+    border-radius: $border-radius;
     min-width: 80px;
     display: inline-block;
     padding: 8px 20px;
@@ -318,7 +318,8 @@ table {
     }
     .buy {
         background-color: $beige;
-        padding: 5px 10px;
+        padding: 10px 15px;
+        border-radius: $border-radius;
     }
 }
 .sec-contact {
@@ -486,6 +487,7 @@ table {
             font-weight: $heading-font-weight;
             margin: 0 auto;
             margin-top: 10px;
+            border-radius: $border-radius;
             &:hover {
                 cursor: pointer;
             }
@@ -604,6 +606,16 @@ table {
 //account page
 .account-area {
     width: 100%;
+    .pic-ac {
+        width: 100%;
+        text-align: center;
+        img {
+            border-radius: 50%;
+            border: 2px solid #fff;
+            width: 150px;
+            height: 150px;
+        }
+    }
     .pic {
         width: 100%;
         text-align: center;
@@ -621,7 +633,6 @@ table {
     }
     .release-order {
         table {
-            display: block;
             border: none;
             width: 100%;
             white-space: nowrap;
@@ -635,6 +646,7 @@ table {
 .account-nav-m {
     white-space: nowrap;
     ul {
+        border-radius: $border-radius;
         display: flex;
         align-items: center;
         flex-wrap: nowrap;
@@ -658,6 +670,7 @@ table {
                     margin: 2px;
                     background-color: $beige;
                     color: $text;
+                    border-radius: $border-radius;
                 }
             }
         }
@@ -694,7 +707,7 @@ table {
         height: 50px;
        }
        .btn{
-        border-radius: 0;
+        border-radius: $border-radius;
        }
        .price {
         color: $green;
@@ -727,6 +740,7 @@ table {
           margin-right: auto;
            margin-top: 20px;
            margin-bottom: 20px;
+           width: fit-content;
         }
     }
 }
@@ -903,6 +917,9 @@ table {
                 display: block;
                 margin-top: 15px;
                 margin-left: 10px;
+                p > strong{
+                    font-size: 1.625rem;
+                }
             }
             
            
@@ -990,7 +1007,7 @@ table {
         background-color: $beige;
         margin-bottom: 20px;
     }
-    .pic{
+    .pic-ac{
         padding-top: 20px;
         display: flex;
         justify-content: center;
@@ -1131,6 +1148,10 @@ table {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
+                p>span {
+                    color: $green;
+                    font-size: 1.625rem;
+                }
             }
             .quantity {
                 position: absolute;
@@ -1173,10 +1194,10 @@ table {
             .list-item{
                 display: flex;
                 justify-content: space-between;
-              
             }
         }
         .btn {
+            width: fit-content;
             display: block;
             margin-left: auto;
         }
@@ -1306,6 +1327,7 @@ table {
             position: absolute;
             right: 38px;
             top: 50%;
+            border-radius: $border-radius;
             img {
                 width: 20px;
                 height: auto;
@@ -1383,6 +1405,11 @@ table {
         }
     }
 }
+a.back {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
 // สั่งซื้อ
 .sd-block1{
          textarea{
@@ -1412,6 +1439,7 @@ table {
     .bt-shop{
         display: block;
         margin: 10px auto;
+        width: fit-content;
     }
     .choose{
         margin-top: 10px;

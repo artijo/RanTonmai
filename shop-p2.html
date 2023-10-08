@@ -95,13 +95,13 @@
                         <form action="#" method="get">
                             <label for="price">ราคา</label>
                             <div class="price">
-                                <input type="number" min="0" name="min" placeholder="ราคาต่ำสุด">
+                                <input type="number" id="price" min="0" name="min" placeholder="ราคาต่ำสุด">
                                 <span>-</span>
-                                <input type="number" name="max" name="max" placeholder="ราคาสูงสุด">
+                                <input type="number" name="max" placeholder="ราคาสูงสุด">
                             </div>
                             <label for="catgory">ประเภทต้นไม้</label>
                             <div class="catgory">
-                                <input type="checkbox" name="catgory" /><span>ต้นไม้มงคล</span><br/>
+                                <input type="checkbox" id="catgory" name="catgory" /><span>ต้นไม้มงคล</span><br/>
                                 <input type="checkbox" name="catgory" /><span>ไม้ยืนต้น</span><br/>
                                 <input type="checkbox" name="catgory" /><span>ไม้ดอก</span><br/>
                                 <input type="checkbox" name="catgory" /><span>ไม้ประดับ</span><br/>
@@ -136,12 +136,12 @@
                                 <a href="#" class="buy">สั่งซื้อ</a>
                             </div>
                             <div class="product-item">
-                                <a href="#">
+                                <a href="./product-orn-detail.html">
                                     <img src="img/p-a.jpg" alt="plant-a" />
                                     <h3 class="title">ต้นไม้ประดับ 1</h3>
                                     <p class="price"><span>500</span> บาท</p>
                                 </a>
-                                <a href="#" class="buy">สั่งซื้อ</a>
+                                <a href="./cart.html" class="buy">สั่งซื้อ</a>
                             </div>
                             <div class="product-item">
                                 <a href="#">
@@ -231,6 +231,7 @@
                             <small>ฝ่ายจัดส่ง</small>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </main>
