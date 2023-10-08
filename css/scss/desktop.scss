@@ -465,9 +465,13 @@ p {
 
 .account-area{
     .block{
+        .pic{
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
         margin-bottom: 20px;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-        padding: 20px;
         .form-account-setting{
             form{
                 .container-account-setting{
@@ -477,6 +481,7 @@ p {
                 }
                 .gruop-of-botton{
                     justify-content: flex-end;
+                    margin-right: 20px;
                 }
             }
         }
@@ -498,6 +503,10 @@ p {
             // .devil-address.selected{
             //     grid-column: span 2;
             // }
+        }
+        .btn-address{
+            width: max-content;
+            margin: 20px auto;
         }
     }
 }
@@ -555,6 +564,20 @@ p {
         img {
             height: 225px;
         }
+.payment-setting{
+    .head-add,.head-select{
+        margin-top: 20px;
+    }
+    .box{
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        .item{
+            
+        }
+        
+    }
+    .box:last-child{
+        margin-bottom: 50px;
     }
 }
 

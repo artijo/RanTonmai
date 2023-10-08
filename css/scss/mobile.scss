@@ -829,6 +829,8 @@ table {
     
     .item{
         #cause{
+            border-radius: $border-radius;
+            border-color: $line;
             min-height: 130px;
             max-height: 130px;
             min-width: 100%;
@@ -843,8 +845,7 @@ table {
             margin-bottom: 0;
         }
         input{
-            border-radius: 5px;
-            border-color: black;
+            border-radius: $border-radius;
             width: 100%;
             margin-bottom:5px;
         }
@@ -985,19 +986,24 @@ table {
 
 .account-area{
     .block{
+        border-radius: $border-radius;
         background-color: $beige;
-    }
-    .pic img{
         margin-bottom: 20px;
+    }
+    .pic{
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
     }
     .form-account-setting{
         form{
-            
             .container-account-setting{
+                padding: 20px;
                 grid-template-columns: auto;
                 display: grid;
                 .input-box{
                     width: 100%;
+                    border-radius: $border-radius;
                 }
                 
             } 
@@ -1048,7 +1054,6 @@ table {
         .btn-address{
             width: max-content;
             margin: 0 auto;
-            margin-top: 20px;
         }
     }
 }
@@ -1468,6 +1473,57 @@ table {
     }
  
 }
+
+
+
+.payment-setting{
+    .diff{
+        color: $green;
+        font-weight: 600;
+    }
+    p{
+        margin: 0;
+    }
+    .box{
+        display: grid;
+        grid-template-columns: auto;
+        .item{
+            margin: 10px auto;
+            display: grid;
+            grid-template-columns: 25% 75%;
+            padding: 1rem;
+            border: 1px solid #cccccc;
+            border-radius: $border-radius;
+            background-color: $beige;
+            box-sizing: border-box;
+            .imgset{
+                img{
+                    width: 100%;
+                    padding-right: 10px;
+                }
+            }
+            .text{
+                display: flex;
+                justify-content: space-between;
+                
+            }
+            .memic-link{
+                color: $green;
+                cursor: pointer;
+            }
+            .memic-link:hover{
+                color:rgb(52, 134, 31);
+            }
+            .number,.text-group,.botton,.add-item{
+                display: flex;
+                align-self:center;
+            }            
+            
+        }
+        
+    }
+}
+
 
 // site-footer
 .site-footer {
