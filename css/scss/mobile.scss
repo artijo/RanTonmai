@@ -1016,6 +1016,7 @@ table {
             }
             .btn-icon{
                 min-width: 20px;
+                max-width: 20px;
                 vertical-align: middle;
             }
         }  
@@ -1165,8 +1166,9 @@ table {
     }
     .box{
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: repeat(1,1fr);
         .item{
+            width: 100%;
             margin: 10px auto;
             display: grid;
             grid-template-columns: 25% 75%;
