@@ -211,7 +211,7 @@ p {
     clear: both;
 }
 .page {
-    min-height: calc(100vh - 220px);
+    min-height: calc(100vh - 342px);
 }
 //shop page
 .shop {
@@ -260,6 +260,23 @@ p {
     float: right;
     width: 75%;
     margin-top: 20px;
+    .pic-ac {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        img {
+            width: 20%;
+            height: auto;
+        }
+        .name {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0;
+        }
+    }
     .pic {
         width: 100%;
         display: flex;
@@ -291,7 +308,7 @@ p {
 .account-nav-d {
     display: block;
     float: left;
-    max-width: 25%;
+    width: 20%;
     text-align: left;
     padding: 0;
     margin-top: 20px;
@@ -304,6 +321,7 @@ p {
         list-style: none;
         padding: 2px;
         background-color: $primary;
+        border-radius: $border-radius;
         li {
             width: 100%;
             a {
@@ -321,6 +339,7 @@ p {
                     margin: 2px;
                     background-color: $beige;
                     color: $text;
+                    border-radius: $border-radius;
                 }
             }
         }
@@ -510,25 +529,99 @@ p {
         }
     }
 }
+// fqa page
+.fqa-block{
+    display: grid;
+    width: 750px;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding: 10px;
+   
+}
+// สรุปคำสั่งซื้อ
+.total-item{
+    width: 750px;
+    margin: 0 auto;
+}
+// สั่งซื้อ
+.shop-order-block{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    .sd-block2{
+        height: fit-content;
+        strong{
+            display: block;
+            margin: 10px auto;
+            width: fit-content;
+            
+        }
+    }
+}
+// เกี่ยวกับเรา
+.about-us{
+    margin: 0 auto;
+    .ab-block{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+    .ab-block2{
+        .ab-block3{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
 
+//news page
+.news {
+    margin-top: 20px;
+    .news-g {
+        grid-template-columns: repeat(3, 1fr);
+        img {
+            height: 225px;
+        }
+    }
+}
 .payment-setting{
+    float: right;
+    width: 75%;
     .head-add,.head-select{
         margin-top: 20px;
     }
     .box{
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
         gap: 20px;
-        .item{
-            
-        }
-        
     }
     .box:last-child{
         margin-bottom: 50px;
     }
 }
 
-
+//help page
+.banner {
+    padding: 4em 0;
+    .banner-text {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+}
+.g {
+    grid-template-columns: repeat(4, 1fr);
+}
+//help-detail
+.nav-help {
+    float: left;
+}
+.content-help {
+    float: right;
+    padding: 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: 0;
+}
 
 
 

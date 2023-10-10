@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="utf-8" />
+        <title>กระถางต้นไม้ - ร้านต้นไม้</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+        <link rel="stylesheet" type="text/css" href="css/desktop.css" media="(min-width: 992px)" />
+    </head>
+
+    <body>
+        <header class="site-header">
+            <div class="s-container">
+                <a href="./" class="logo">
+                    <img src="img/logo-green.svg" alt="logo" />
+                    <h1 class="title">ร้านต้นไม้</h1>
+                </a>
+                <div class="nav-mobile">
+                    <ul>
+                        <li><a href="./shop.html">สินค้า</a><span class="more"><img src="img/chevron-compact-down.svg" alt="more" class="m-sub1"></span>
+                            <ul class="item-m-sub1">
+                                <li><a href="./shop-plant.html">ต้นไม้</a><span class="more"><img src="img/chevron-compact-down.svg" alt="more" class="m-sub2"></span>
+                                    <ul class="item-m-sub2">
+                                        <li><a href="./shop-indoor.html">ต้นไม้ในบ้าน</a></li>
+                                        <li><a href="./shop-outdoor.html">ต้นไม้นอกบ้าน</a></li>
+                                        <li><a href="./shop-ornamental.html">ต้นไม้ประดับ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./shop-pot.html">กระถางต้นไม้</a></li>
+                                <li><a href="./shop-seed.html">เมล็ดพันธ์</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./account-historybuy.html">การสั่งซื้อ</a><span class="more"><img src="img/chevron-compact-down.svg" alt="more" class="m-sub3"></span>
+                            <ul class="item-m-sub1-2">
+                                <li><a href="./confirm-payment.html">แจ้งชำระเงิน</a></li>
+                                <li><a href="./check-orderstatus.html">ตรวจสอบสถานะออเดอร์</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./news.html">ข่าวสาร</a></li>
+                        <li><a href="./contactus.html">ติดต่อเรา</a></li>
+                    </ul>
+                    <form action="./shop-search.html" method="get" class="search">
+                        <input type="text" name="search" placeholder="ค้นหา" />
+                        <button type="submit"><img src="img/search.svg" alt="search" /></button>
+                    </form>
+                </div>
+                <form action="./shop-search.html" method="get" class="search _desktop">
+                    <input type="text" name="search" placeholder="ค้นหา" />
+                    <button type="submit"><img src="img/search.svg" alt="search" /></button>
+                </form>
+                <div class="nav-desktop">
+                    <ul>
+                        <li class="d-sub-1"><a href="./shop.html">สินค้า<i class="arrow down"></i></a>
+                            <ul class="d-sub-1-item">
+                                <li class="d-sub-2"><a href="#">ต้นไม้<i class="arrow right"></i></a>
+                                    <ul class="d-sub-2-item">
+                                        <li><a href="./shop-indoor.html">ต้นไม้ในบ้าน</a></li>
+                                        <li><a href="./shop-outdoor.html">ต้นไม้นอกบ้าน</a></li>
+                                        <li><a href="./shop-ornamental.html">ต้นไม้ประดับ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./shop-pot.html">กระถางต้นไม้</a></li>
+                                <li><a href="./shop-seed.html">เมล็ดพันธ์</a></li>
+                            </ul>
+                        </li>
+                        <li class="d-sub-1"><a href="./account-historybuy.html">การสั่งซื้อ<i class="arrow down"></i></a>
+                            <ul class="d-sub-1-item">
+                                <li><a href="./confirm-payment.html">แจ้งชำระเงิน</a></li>
+                                <li><a href="./check-orderstatus.html">ตรวจสอบสถานะออเดอร์</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./news.html">ข่าวสาร</a></li>
+                        <li><a href="./contactus.html">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+                <a href="./cart.html" class="cart">
+                    <img src="img/basket.svg" alt="shopping cart" />
+                </a>
+                <a href="./account.html" class="account">
+                    <img src="img/user.svg" alt="my account">
+                </a>
+                <div class="menu-toggle"><b></b></div>
+            </div>
+        </header>
+
+        <main class="site-body">
+            <div class="s-container">
+                <div class="page-head">
+                    <h1 class="title">กระถามต้นไม้</h1>
+                    <p class="breadcrumbs"><a href="./">หน้าแรก</a> > <a href="./shop.html">สินค้า</a> > <a href="./shop-pot.html">กระถางต้นไม้</a></p>
+                </div>
+                <div class="page shop">
+                    <div class="fillter">
+                        <h2 class="title">คัดกรองสินค้า</h2>
+                        <form action="#" method="get">
+                            <label for="price">ราคา</label>
+                            <div class="price">
+                                <input type="number" id="price" min="0" name="min" placeholder="ราคาต่ำสุด">
+                                <span>-</span>
+                                <input type="number" name="max" placeholder="ราคาสูงสุด">
+                            </div>
+                            <!-- <label for="catgory">ประเภทต้นไม้</label>
+                            <div class="catgory">
+                                <input type="checkbox" name="catgory" /><span>ต้นไม้มงคล</span><br/>
+                                <input type="checkbox" name="catgory" /><span>ไม้ยืนต้น</span><br/>
+                                <input type="checkbox" name="catgory" /><span>ไม้ดอก</span><br/>
+                                <input type="checkbox" name="catgory" /><span>ไม้ประดับ</span><br/>
+                            </div> -->
+                            <input type="submit" value="คัดกรอง">
+                        </form>
+                    </div>
+                    <div class="shopping">
+                        <div class="product-items">
+                            <div class="product-item">
+                                <a href="./product-pot-detail.html">
+                                    <img src="img/p-1.jpg" alt="pot-1" />
+                                    <h3 class="title">กระถามต้นไม้ 1</h3>
+                                    <p class="price"><span>100</span> บาท</p>
+                                </a>
+                                <a href="./cart.html" class="buy">สั่งซื้อ</a>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="img/p-2.jpg" alt="pot-2" />
+                                    <h3 class="title">กระถางต้นไม้ 2</h3>
+                                    <p class="price"><span>100</span> บาท</p>
+                                </a>
+                                <a href="#" class="buy">สั่งซื้อ</a>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="img/p-3.jpg" alt="pot-3" />
+                                    <h3 class="title">กระถางต้นไม้ 3</h3>
+                                    <p class="price"><span>100</span> บาท</p>
+                                </a>
+                                <a href="#" class="buy">สั่งซื้อ</a>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="img/p-4.jpg" alt="pot-4" />
+                                    <h3 class="title">กระถางต้นไม้ 4</h3>
+                                    <p class="price"><span>100</span> บาท</p>
+                                </a>
+                                <a href="#" class="buy">สั่งซื้อ</a>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="img/p-5.jpg" alt="pot-5" />
+                                    <h3 class="title">กระถางต้นไม้ 5</h3>
+                                    <p class="price"><span>100</span> บาท</p>
+                                </a>
+                                <a href="#" class="buy">สั่งซื้อ</a>
+                        </div>
+                        <div class="product-item">
+                            <a href="#">
+                                <img src="img/p-6.jpg" alt="pot-6" />
+                                <h3 class="title">กระถางต้นไม้ 6</h3>
+                                <p class="price"><span>100</span> บาท</p>
+                            </a>
+                            <a href="#" class="buy">สั่งซื้อ</a>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="img/p-7.jpg" alt="pot-7" />
+                                    <h3 class="title">กระถางต้นไม้ 7</h3>
+                                    <p class="price"><span>100</span> บาท</p>
+                                </a>
+                                <a href="#" class="buy">สั่งซื้อ</a>
+                            </div>
+                            <div class="product-item">
+                                <a href="#">
+                                    <img src="img/p-8.jpg" alt="pot-8" />
+                                    <h3 class="title">กระถางต้นไม้ 8</h3>
+                                    <p class="price"><span>100</span> บาท</p>
+                                </a>
+                                <a href="#" class="buy">สั่งซื้อ</a>
+                            </div>
+                            </div>
+                    </div>
+                   
+                    <div class="sec-contact">
+                    <h2 class="sec-title">ติดต่อเรา</h2>
+                    <div class="contact-items">
+                        <a href="tel:+66812345678" class="contact-item" target="_blank">
+                            <img src="img/phone.svg" width="32" height="32" alt="Phone" />
+                            <div class="info">
+                                <small>โทรศัพท์</small>
+                                <strong>081-234-5678</strong>
+                            </div>
+                        </a>
+
+                        <a href="http://line.me/ti/p/@linebizth" class="contact-item" target="_blank">
+                            <img src="img/line.svg" width="32" height="32" alt="Line" />
+                            <div class="info">
+                                <small>แอดไลน์</small>
+                                <strong>RanTonmai</strong>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="person-items">
+                        <div class="person-item">
+                            <img src="img/person-1.jpg" width="90" height="90" alt="Person 1" />
+                            <h3 class="title">จุ๋ม</h3>
+                            <small>ฝ่ายขาย</small>
+                        </div>
+                        <div class="person-item">
+                            <img src="img/person-2.jpg" width="90" height="90" alt="Person 2" />
+                            <h3 class="title">แอนนี่</h3>
+                            <small>ฝ่ายขาย</small>
+                        </div>
+                        <div class="person-item">
+                            <img src="img/person-3.jpg" width="90" height="90" alt="Person 3" />
+                            <h3 class="title">ตี๋เล็ก</h3>
+                            <small>ฝ่ายจัดส่ง</small>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="s-container">
+                <div class="company">
+                    <a href="#" class="logo">
+                        <img src="img/logo-white.svg" alt="logo" />
+                    </a>
+                    <strong class="title">บริษัท ร้านต้นไม้ จำกัด</strong>
+                    <p>
+                        123 หมู่ 4 ถ. รักษ์โลก แขวงต้นไม้ <br />
+                        เขตในบ้าน ขอนแก่น 40000
+                    </p>
+                    <p>จันทร์ - เสาร์ 10:00 - 19:00 น.<br/>
+                        โทร
+                        <strong><a href="tel:+66812345678">081-234-5678</a></strong>
+                        
+                        
+                    </p>
+                </div>
+                <nav class="nav-store">
+                    <h4>สินค้าต่างๆ</h4>
+                    <ul>
+                        <li><a href="./shop-indoor.html">ต้นไม้ในบ้าน</a></li>
+                        <li><a href="./shop-outdoor.html">ต้นไม้นอกบ้าน</a></li>
+                        <li><a href="./shop-ornamental.html">ต้นไม้ประดับ</a></li>
+                        <li><a href="./shop-pot.html">กระถางต้นไม้</a></li>
+                        <li><a href="./shop-seed.html">เมล็ดพันธ์</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav-policy">
+                    <h4>นโยบาย</h4>
+                    <ul>
+                        <li><a href="./policy.html">นโยบายทางธุระกิจ</a></li>
+                        <li><a href="./privacy.html">นโยบายความเป็นส่วนตัว</a></li>
+                        <li><a href="./need-money-back.html">ขอคืนเงิน/สินค้า</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav-help">
+                    <h4>ช่วยเหลือ</h4>
+                    <ul>
+                        <li><a href="./contactus.html">ติดต่อเรา</a></li>
+                        <li><a href="./fqa.html">คำถามที่พบบ่อย</a></li>
+                        <li><a href="./help.html">วิธีดูแลรักษาต้นไม้</a></li>
+                    </ul>
+                </nav>
+                <div class="more">
+                    <div class="social">
+                        <a href="#"><img src="img/instagram.svg" alt="instagram"/></a>
+                        <a href="#"><img src="img/facebook.svg" alt="facebook"/></a>
+                        <a href="#"><img src="img/twitter.svg" alt="twitter"/></a>
+                        <a href="#"><img src="img/line.svg" alt="line"/></a>
+                    </div>
+                    <div class="copyright">© 2023. All rights reserved</div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
