@@ -837,13 +837,10 @@ table {
 //need-money-back.html
 
 .Need-money-back{
-
-    .box:first-child{
-        border-bottom: 1.5px solid #cccccc;
-    }
     
     .item{
         #cause{
+            resize: none;
             border-radius: $border-radius;
             border-color: $line;
             min-height: 130px;
@@ -1047,15 +1044,14 @@ table {
 
 .container-devli-address{
     .container{
-        margin-bottom: 20px;
         .address-box{
-            grid-template-columns: auto;
+            grid-template-columns: auto auto;
+            gap: 20px;
             display: grid;
         .devil-address{
-            
+            margin-bottom: 20px;
             width: 100%;
             background-color: $beige;
-            margin-bottom: 20px;
             // border: 1px solid #cccccc;
             border-radius: $border-radius;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -1067,9 +1063,9 @@ table {
                 // display: inline-block;
             }
             .btn-icon{
-                min-width: 20px;
-                max-width: 20px;
-                vertical-align: middle;
+                min-width: 15px;
+                max-width: 15px;
+                vertical-align: baseline;
             }
         }  
         
@@ -1077,6 +1073,7 @@ table {
         .btn-address{
             width: max-content;
             margin: 0 auto;
+            margin-bottom: 20px;
         }
     }
 }
@@ -1533,7 +1530,7 @@ a.back {
             box-sizing: border-box;
             .imgset{
                 img{
-                    width: 100%;
+                    width:70px;
                     padding-right: 10px;
                 }
             }
@@ -1543,19 +1540,56 @@ a.back {
                 
             }
             .memic-link{
-                color: $green;
+                color: white;
                 cursor: pointer;
-            }
-            .memic-link:hover{
-                color:rgb(52, 134, 31);
             }
             .number,.text-group,.botton,.add-item{
                 display: flex;
                 align-self:center;
+                justify-content: center;
             }            
             
         }
-        
+        .item:last-child{
+            background-color: $green;
+            grid-template-columns: auto;
+            text-align: center;
+        }
+        .item:last-child:hover{
+            background-color: rgb(10, 70, 10);
+        }  
+    }
+}
+
+.content-snm{
+    margin-top: 20px;
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        .item-snm{
+            display: block;
+            .in-text{
+                background-color:$green-2;
+                border-radius: $border-radius;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 1.5rem;
+                padding: 1rem 1.5rem;
+                color: white;
+                .custom-img{
+                    .icon-custom-go{
+                        max-width: 40px;
+                    }
+                }
+            }
+            .in-text:hover{
+                background-color:$green;
+            }
+        }  
+    }
+    .bg-for-snb{
+        display: none;
     }
 }
 
