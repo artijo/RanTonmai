@@ -523,6 +523,13 @@ p {
 .total-item{
     width: 750px;
     margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    .item-block{
+        width: calc(100%/2);
+    }
+   
+
 }
 // สั่งซื้อ
 .shop-order-block{

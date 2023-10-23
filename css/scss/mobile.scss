@@ -1362,11 +1362,12 @@ table {
 // สรุปคำสั่งซื้อ
 .total-item{
     .item-block{
-        border: 1px solid $green;
+        background-color: beige;
         margin: 20px 0;
         padding: 10px;
         line-height: 2em;
         border-radius: 5px;
+        color: $green;
        
         .total-price{
             display: flex;
