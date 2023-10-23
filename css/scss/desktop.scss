@@ -211,7 +211,7 @@ p {
     clear: both;
 }
 .page {
-    min-height: calc(100vh - 366px);
+    min-height: calc(100vh - 342px);
 }
 //shop page
 .shop {
@@ -260,6 +260,23 @@ p {
     float: right;
     width: 75%;
     margin-top: 20px;
+    .pic-ac {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        img {
+            width: 20%;
+            height: auto;
+        }
+        .name {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0;
+        }
+    }
     .pic {
         width: 100%;
         display: flex;
@@ -291,7 +308,7 @@ p {
 .account-nav-d {
     display: block;
     float: left;
-    max-width: 25%;
+    width: 20%;
     text-align: left;
     padding: 0;
     margin-top: 20px;
@@ -304,6 +321,7 @@ p {
         list-style: none;
         padding: 2px;
         background-color: $primary;
+        border-radius: $border-radius;
         li {
             width: 100%;
             a {
@@ -321,6 +339,7 @@ p {
                     margin: 2px;
                     background-color: $beige;
                     color: $text;
+                    border-radius: $border-radius;
                 }
             }
         }
@@ -412,35 +431,22 @@ p {
 
 //need-monet-back.html
 .Need-money-back{
-    .Form{
-        display: flex;
-        gap: 20px;
-        .box{
-            width: 50%;
-            h3{
-                text-align: center;
-            }
-            .text-important{
-                margin:47px 0;
-            }
-        }
-        .box:first-child{
-            border-right: 1.5px solid #cccccc;
-            border-bottom:0;
-            padding-right: 20px;
-        }
+    .Form-box::before{
+        content: none;
+        display: none;
     }
-
-
     .Form-box{
-        .item-btn-layout{
-            justify-content: center;
-            margin-right: 2%;
-            display: flex;
-            width: 100%;
-
-        }
+        display: grid;
+        gap: 20px;
+        grid-template-columns:repeat(2,1fr);
     }
+    .item3,.p-item,.item-btn-layout{
+        grid-column: 1/span 2;
+    }
+    .itemcause{
+        grid-column: 1/1;
+    }
+    
 }
 
 .account-area{
@@ -491,18 +497,30 @@ p {
 
 .container-devli-address{
     .container{
-        margin-bottom: 20px;
+        p{
+            margin: 0;
+            padding: 0;
+            line-height: 40px;
+        }
         .address-box{
             gap: 20px;
-            grid-template-columns: auto auto auto auto;
+            grid-template-columns: auto;
             .devil-address{
+                display: grid;
+                grid-template-columns: auto auto;
                 width: 100%;
                 max-height: max-content;
                 margin-bottom: 0;
+                .text-card{
+                    padding-left: 35px;
+                }
+                .text-card-btn{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                }
             }
-            // .devil-address.selected{
-            //     grid-column: span 2;
-            // }
         }
         .btn-address{
             width: max-content;
@@ -574,11 +592,13 @@ p {
     }
 }
 .payment-setting{
+    float: right;
+    width: 75%;
     .head-add,.head-select{
         margin-top: 20px;
     }
     .box{
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
         gap: 20px;
     }
     .box:last-child{
@@ -648,5 +668,25 @@ p {
     .more {
         margin-left: auto;
         text-align: center;
+    }
+}
+
+.content-snm{
+    float: right;
+    width:77%;
+    .container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    .bg-for-snb{
+        display: block;
+        margin: 0 auto;
+        opacity: 0.3;
+        width: 50%;
+        margin-top: 2.6rem;
+        max-width: 200px;
+        img{
+            width: 100%;
+        }
     }
 }

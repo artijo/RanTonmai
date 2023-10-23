@@ -96,25 +96,25 @@
                                 <div class="form">
                                     <form action="#">
                                         <label for="name">ชื่อ <span class="req">*</span></label> <br/>
-                                        <input type="text"> <br>
-                                        <label for="name">นามสกุล<span class="req">*</span></label> <br/>
-                                        <input type="text"> <br>
-                                        <label for="name">ที่อยู่<span class="req">*</span></label> <br/>
-                                        <textarea name="living"  placeholder="กรอกรายละเอียดที่อยู่"></textarea> <br/>
-                                        <label for="name">จังหวัด<span class="req">*</span></label> <br/>
-                                        <input type="text"> <br>
-                                        <label for="name">อำเภอ<span class="req">*</span></label> <br/>
-                                        <input type="text"> <br>
-                                        <label for="name">ตำบล<span class="req">*</span></label> <br/>
-                                        <input type="text"> <br>
-                                        <label for="name">รหัสไปรษณี<span class="req">*</span></label> <br/>
-                                        <input type="text"> <br>
-                                        <label for="name">หมายเลขโทรศัพท์<span class="req">*</span></label> <br/>
-                                        <input type="tel"> <br>
-                                        <label for="name">อีเมล</label> <br/>
-                                        <input type="text"> <br>
-                                        <label for="name">หมายเหตุ</label> <br/>
-                                        <textarea name=""></textarea> <br/>
+                                        <input type="text" id="name"/> <br>
+                                        <label for="namel">นามสกุล<span class="req">*</span></label> <br/>
+                                        <input type="text" id="namel"/> <br>
+                                        <label for="address">ที่อยู่<span class="req">*</span></label> <br/>
+                                        <textarea id="address" name="living"  placeholder="กรอกรายละเอียดที่อยู่"></textarea> <br/>
+                                        <label for="pv">จังหวัด<span class="req">*</span></label> <br/>
+                                        <input type="text" id="pv"/> <br>
+                                        <label for="p">อำเภอ<span class="req">*</span></label> <br/>
+                                        <input type="text" id="p"/> <br>
+                                        <label for="tb">ตำบล<span class="req">*</span></label> <br/>
+                                        <input type="text" id="tb"/> <br>
+                                        <label for="post">รหัสไปรษณี<span class="req">*</span></label> <br/>
+                                        <input type="text" id="post"/> <br>
+                                        <label for="tell">หมายเลขโทรศัพท์<span class="req">*</span></label> <br/>
+                                        <input type="tel" id="tell"/> <br>
+                                        <label for="email">อีเมล</label> <br/>
+                                        <input type="email" id="email"/> <br>
+                                        <label for="it">หมายเหตุ</label> <br/>
+                                        <textarea name="it" id="it"></textarea> <br/>
     
                                     </form>
                                 </div>
@@ -138,11 +138,12 @@
                                 <span class="home-cash">ชำระแบบปลายทาง</span> <span class="item">60 </span> บาท
                               <div class="choose">
                                 <span>เลือกรูปแบบการชำระเงิน</span>  <br/>
-                                <input type="radio" name="cash" id="cash"> เก็บเงินปลายทาง <br/>
-                                <input type="radio" name="cash" id="cash"> โอนผ่านแอพธนาคาร
+                                <input type="radio" name="cash"> เก็บเงินปลายทาง <br/>
+                                <input type="radio" name="cash"> บัตรเครดิต-บัตรเดบิต <br/>
+                                <input type="radio" name="cash"> โอนผ่านแอพธนาคาร
                               </div>
                               <span class="item">ยอดรวม: 2,000 บาท</span> <br/>
-                              <button class="btn btn-main bt-shop">สั่งซื้อ</button>
+                              <a href="./confirm-payment.html" class="btn btn-main bt-shop">สั่งซื้อ</a>
                         </div>
                     </div>
                 </div>

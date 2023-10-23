@@ -2,7 +2,7 @@
 <html lang="th">
     <head>
         <meta charset="utf-8" />
-        <title>แก้ไขที่อยู่ - ร้านต้นไม้</title>
+        <title>ตั้งค่าการชำระเงิน - ร้านต้นไม้</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="css/mobile.css" />
         <link rel="stylesheet" type="text/css" href="css/desktop.css" media="(min-width: 992px)" />
@@ -86,50 +86,56 @@
         <main class="site-body">
             <div class="s-container">
                 <div class="page-head">
-                    <h2 class="title">แก้ไขที่อยู่</h2>
-                    <p class="breadcrumbs"><a href="./">หน้าแรก</a> > <a href="./account.html">สมาชิก</a> > <a href="./account-purchasing.html">แก้ไขที่อยู่</a></p>
+                    <h2 class="title">คืนเงิน/คืนสินค้า</h2>
+                    <p class="breadcrumbs"><a href="./">หน้าแรก</a> > <a href="./account.html">สมาชิก</a> > <a href="./account-purchasing.html">คืนเงิน / คืนสินค้า</a></p>
                 </div>
-                <div class="content-edit">
+                <nav class="account-nav-d">
+                    <ul>
+                        <li><a href="./account.html" >หน้าหลัก</a></li>
+                        <li><a href="./account-historybuy.html">การซื้อของฉัน</a></li>
+                        <li><a href="./account-purchasing.html">สินค้าที่ถูกใจ</a></li>
+                        <li><a href="./account-select-needmoney-back.html" class="current">คืนเงิน/คืนสินค้า</a></li>
+                        <li><a href="./account-setting.html">ตั้งค่าบัญชี</a></li>
+                        <li><a href="./account-delivery-address.html">ที่อยู่จัดส่ง</a></li>
+                        <li><a href="./account-payment-setting.html">ตั้งค่าการชำระเงิน</a></li>
+                    </ul>
+                </nav>
+                <nav class="account-nav-m">
+                    <ul>
+                        <li><a href="./account.html" >หน้าหลัก</a></li>
+                        <li><a href="./account-historybuy.html">การซื้อของฉัน</a></li>
+                        <li><a href="./account-purchasing.html">สินค้าที่ถูกใจ</a></li>
+                        <li><a href="./account-select-needmoney-back.html" class="current">คืนเงิน/คืนสินค้า</a></li>
+                        <li><a href="./account-setting.html">ตั้งค่าบัญชี</a></li>
+                        <li><a href="./account-delivery-address.html">ที่อยู่จัดส่ง</a></li>
+                        <li><a href="./account-payment-setting.html" >ตั้งค่าการชำระเงิน</a></li>
+                    </ul>
+                </nav>
+                <div class="content-snm">
                     <div class="container">
-                        <form action="#">
-                            <fieldset>
-                                <legend>รายละเอียดที่อยู่</legend>
-                                <div class="container-grid">
-                                    <div class="text-input">
-                                        <label for="names">ชื่อผู้รับ</label><br>
-                                        <input type="text" name="name" id="names">
-                                    </div>
-                                    <div class="text-input item">
-                                        <label for="provinces">จังหวัด</label><br>
-                                        <input type="text" name="province" id="provinces">
-                                    </div>
-                                    <div class="text-input item">
-                                        <label for="zip-codes">รหัสไปรษณีย์</label><br>
-                                        <input type="text" name="zip-code" id="zip-codes">
-                                    </div>
-                                    <div class="text-input item1">
-                                        <label for="province">อำเภอ</label><br>
-                                        <input type="text" name="province" id="province">
-                                    </div>
-                                    <div class="text-input item2">
-                                        <label for="district">ตำบล</label><br>
-                                        <input type="text" name="district" id="district">
-                                    </div>
-                                    <div class="text-input item3">
-                                        <label for="phones">เบอร์โทรศัพท์</label><br>
-                                        <input type="tel" name="phone" id="phones" pattern="^0[0-9]{9}$" required>
-                                    </div>
-                                    <div class="text-input item4">
-                                        <label for="address">ที่อยู่</label>
-                                        <input type="text" name="address" id="address">
-                                    </div>
+                        <a href="./need-money-back.html" class="item-snm">
+                            <div class="in-text">
+                                <div class="text">
+                                    <strong>คืนเงิน</strong> 
                                 </div>
-                            </fieldset>
-                            <div class="botton-group">
-                                <a href="./account-delivery-address.html" class="btn btn-main btn-alt">ยกเลิก</a>
-                                <a href="./account-delivery-address.html" class="btn btn-main submit">บันทึก</a>
+                                <div class="custom-img">
+                                    <img src="./img/money-back.svg" alt="money-back" class="icon-custom-go one">
+                                </div>      
                             </div>
-                        </form>
+                        </a>
+                        <a href="./return-product.html" class="item-snm">
+                            <div class="in-text">
+                                <div class="text">
+                                    <strong>คืนสินค้า</strong>
+                                </div>
+                                <div class="custom-img">
+                                    <img src="./img/return-box.svg" alt="return-box" class="icon-custom-go">
+                                </div>      
+                            </div> 
+                        </a>
+                    </div>
+                    <div class="bg-for-snb">
+                        <img src="./img/logo-green.svg" alt="logo-website">
                     </div>
                 </div>
             </div>

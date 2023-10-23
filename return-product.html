@@ -2,7 +2,7 @@
 <html lang="th">
     <head>
         <meta charset="utf-8" />
-        <title>แก้ไขที่อยู่ - ร้านต้นไม้</title>
+        <title>คืนสินค้า/คืนเงิน - ร้านต้นไม้</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="css/mobile.css" />
         <link rel="stylesheet" type="text/css" href="css/desktop.css" media="(min-width: 992px)" />
@@ -85,52 +85,70 @@
 
         <main class="site-body">
             <div class="s-container">
-                <div class="page-head">
-                    <h2 class="title">แก้ไขที่อยู่</h2>
-                    <p class="breadcrumbs"><a href="./">หน้าแรก</a> > <a href="./account.html">สมาชิก</a> > <a href="./account-purchasing.html">แก้ไขที่อยู่</a></p>
-                </div>
-                <div class="content-edit">
-                    <div class="container">
-                        <form action="#">
-                            <fieldset>
-                                <legend>รายละเอียดที่อยู่</legend>
-                                <div class="container-grid">
-                                    <div class="text-input">
-                                        <label for="names">ชื่อผู้รับ</label><br>
-                                        <input type="text" name="name" id="names">
-                                    </div>
-                                    <div class="text-input item">
-                                        <label for="provinces">จังหวัด</label><br>
-                                        <input type="text" name="province" id="provinces">
-                                    </div>
-                                    <div class="text-input item">
-                                        <label for="zip-codes">รหัสไปรษณีย์</label><br>
-                                        <input type="text" name="zip-code" id="zip-codes">
-                                    </div>
-                                    <div class="text-input item1">
-                                        <label for="province">อำเภอ</label><br>
-                                        <input type="text" name="province" id="province">
-                                    </div>
-                                    <div class="text-input item2">
-                                        <label for="district">ตำบล</label><br>
-                                        <input type="text" name="district" id="district">
-                                    </div>
-                                    <div class="text-input item3">
-                                        <label for="phones">เบอร์โทรศัพท์</label><br>
-                                        <input type="tel" name="phone" id="phones" pattern="^0[0-9]{9}$" required>
-                                    </div>
-                                    <div class="text-input item4">
-                                        <label for="address">ที่อยู่</label>
-                                        <input type="text" name="address" id="address">
+                <div class="page Need-money-back">
+                    <div class="page-head">
+                        <h1 class="title">ฟอร์มขอคืนเงิน</h1>
+                        <p class="breadcrumbs"><a href="./">หน้าแรก</a> > <a href="./account.html">โปรไฟล์</a> > <a href="./account-select-needmoney-back.html">คืนสินค้า</a></p>
+                    </div>
+                    <div class="Form">
+                        <!-- My layout -->
+                        <!-- <div class="box">
+                            <h3>คืนเงิน</h3>
+                            <form action="#" class="Form-box">
+                                <div class="item item1">
+                                    <h5><label for="Order-number1">เลขคำสั้งซื้อ</label></h5>
+                                    <input type="text" name="Order-number" id="Order-number1" required>
+                                </div>
+                                <div class="item item2">
+                                    <h5><label for="phone1">เบอร์โทรศัพท์</label></h5>
+                                    <input type="tel" name="phone" id="phone1" pattern="^0[0-9]{9}$" required>
+                                </div>
+                                <div class="item item3">
+                                    <h5><label for="files1">หลักฐานสินค้าชำรุด</label></h5>
+                                    <input type="file" name="files" class="files" id="files1" required>
+                                </div>
+                                <div class="p-item">
+                                    <p class="text-important">
+                                        <span class="asterisk">*</span>การคืนเงินสามารถขอคืนเงินได้กรณีที่สินค้าชำรุดเท่านั้น
+                                        เมื่อผ่านการพิจารณา เราจะแจ้งผลผ่านหน้า รายละเอียดคำสั่งซื้อให้คุณพร้อมกับขอหมายเลขบัญชีเพื่อโอนเงินคืนให้คุณ
+                                    </p>
+                                </div>
+                                <div class="item-btn-layout">
+                                    <div class="item-btn">
+                                        <input type="submit" class="btn-submit" value="ขอเงินคืน">
                                     </div>
                                 </div>
-                            </fieldset>
-                            <div class="botton-group">
-                                <a href="./account-delivery-address.html" class="btn btn-main btn-alt">ยกเลิก</a>
-                                <a href="./account-delivery-address.html" class="btn btn-main submit">บันทึก</a>
-                            </div>
-                        </form>
+                            </form>
+                        </div> -->
+
+                        <div class="box">
+                            <h3>คืนสินค้า</h3>
+                            <form action="#" class="Form-box">
+                                <div class="item item1">
+                                    <h5><label for="Order-number2">เลขคำสั้งซื้อ</label></h5>
+                                    <input type="text" name="Order-number" id="Order-number2" required>
+                                </div>
+                                <div class="item item2">
+                                    <h5><label for="phone2">เบอร์โทรศัพท์</label></h5>
+                                    <input type="tel" name="phone" id="phone2" pattern="^0[1-9]\d{7}$" required>
+                                </div>
+                                <div class="item item3 itemcause">
+                                    <h5><label for="files2">หลักฐานสินค้าที่ยังไม่ผ่านการใช้งาน</label></h5>
+                                    <input type="file" name="files" class="files" id="files2" required>
+                                </div>
+                                <div class="item item4 ">
+                                    <h5><label for="cause">สาเหตุ</label></h5>
+                                    <textarea name="cause" id="cause"></textarea>
+                                </div>
+                                <div class="item-btn-layout">
+                                    <div class="item-btn">
+                                        <input type="submit" class="btn-submit" value="คืนสินค้า">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
+                   
                 </div>
             </div>
         </main>

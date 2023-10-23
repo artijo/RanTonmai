@@ -16,7 +16,7 @@ span.bold {
 }
 .btn-main,
 .btn-alt {
-    border-radius: 40px;
+    border-radius: $border-radius;
     min-width: 80px;
     display: inline-block;
     padding: 8px 20px;
@@ -318,7 +318,8 @@ table {
     }
     .buy {
         background-color: $beige;
-        padding: 5px 10px;
+        padding: 10px 15px;
+        border-radius: $border-radius;
     }
 }
 .sec-contact {
@@ -486,6 +487,7 @@ table {
             font-weight: $heading-font-weight;
             margin: 0 auto;
             margin-top: 10px;
+            border-radius: $border-radius;
             &:hover {
                 cursor: pointer;
             }
@@ -604,6 +606,16 @@ table {
 //account page
 .account-area {
     width: 100%;
+    .pic-ac {
+        width: 100%;
+        text-align: center;
+        img {
+            border-radius: 50%;
+            border: 2px solid #fff;
+            width: 150px;
+            height: 150px;
+        }
+    }
     .pic {
         width: 100%;
         text-align: center;
@@ -621,7 +633,6 @@ table {
     }
     .release-order {
         table {
-            display: block;
             border: none;
             width: 100%;
             white-space: nowrap;
@@ -635,6 +646,7 @@ table {
 .account-nav-m {
     white-space: nowrap;
     ul {
+        border-radius: $border-radius;
         display: flex;
         align-items: center;
         flex-wrap: nowrap;
@@ -658,6 +670,7 @@ table {
                     margin: 2px;
                     background-color: $beige;
                     color: $text;
+                    border-radius: $border-radius;
                 }
             }
         }
@@ -694,7 +707,7 @@ table {
         height: 50px;
        }
        .btn{
-        border-radius: 0;
+        border-radius: $border-radius;
        }
        .price {
         color: $green;
@@ -714,6 +727,7 @@ table {
 }
 // check status order without login
 .check-storder{
+    margin-bottom: 20px;
     .check-st{
         margin-left: auto;
         margin-right: auto;
@@ -727,6 +741,7 @@ table {
           margin-right: auto;
            margin-top: 20px;
            margin-bottom: 20px;
+           width: fit-content;
         }
     }
 }
@@ -822,13 +837,10 @@ table {
 //need-money-back.html
 
 .Need-money-back{
-
-    .box:first-child{
-        border-bottom: 1.5px solid #cccccc;
-    }
     
     .item{
         #cause{
+            resize: none;
             border-radius: $border-radius;
             border-color: $line;
             min-height: 130px;
@@ -903,6 +915,9 @@ table {
                 display: block;
                 margin-top: 15px;
                 margin-left: 10px;
+                p > strong{
+                    font-size: 1.625rem;
+                }
             }
             
            
@@ -946,7 +961,11 @@ table {
                 padding-right:20px;
                 justify-content: flex-end;
                 display: flex;
+                
                 .btn-order{
+                    a {
+                        color: #fff;
+                    }
                     
                     font-weight: 400;
                 }
@@ -990,7 +1009,7 @@ table {
         background-color: $beige;
         margin-bottom: 20px;
     }
-    .pic{
+    .pic-ac{
         padding-top: 20px;
         display: flex;
         justify-content: center;
@@ -1025,15 +1044,14 @@ table {
 
 .container-devli-address{
     .container{
-        margin-bottom: 20px;
         .address-box{
-            grid-template-columns: auto;
+            grid-template-columns: auto auto;
+            gap: 20px;
             display: grid;
         .devil-address{
-            
+            margin-bottom: 20px;
             width: 100%;
             background-color: $beige;
-            margin-bottom: 20px;
             // border: 1px solid #cccccc;
             border-radius: $border-radius;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -1045,8 +1063,9 @@ table {
                 // display: inline-block;
             }
             .btn-icon{
-                min-width: 20px;
-                vertical-align: middle;
+                min-width: 15px;
+                max-width: 15px;
+                vertical-align: baseline;
             }
         }  
         
@@ -1054,6 +1073,7 @@ table {
         .btn-address{
             width: max-content;
             margin: 0 auto;
+            margin-bottom: 20px;
         }
     }
 }
@@ -1131,6 +1151,10 @@ table {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
+                p>span {
+                    color: $green;
+                    font-size: 1.625rem;
+                }
             }
             .quantity {
                 position: absolute;
@@ -1173,10 +1197,10 @@ table {
             .list-item{
                 display: flex;
                 justify-content: space-between;
-              
             }
         }
         .btn {
+            width: fit-content;
             display: block;
             margin-left: auto;
         }
@@ -1306,6 +1330,7 @@ table {
             position: absolute;
             right: 38px;
             top: 50%;
+            border-radius: $border-radius;
             img {
                 width: 20px;
                 height: auto;
@@ -1384,6 +1409,11 @@ table {
         }
     }
 }
+a.back {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
 // สั่งซื้อ
 .sd-block1{
          textarea{
@@ -1400,7 +1430,7 @@ table {
     .form{
         margin-top: 20px;
     }
-   input[type="text"],input[type="tel"],textarea{
+   input[type="text"],input[type="tel"],textarea,input[type="email"]{
     width: 100%;
    }
 }
@@ -1413,6 +1443,7 @@ table {
     .bt-shop{
         display: block;
         margin: 10px auto;
+        width: fit-content;
     }
     .choose{
         margin-top: 10px;
@@ -1487,8 +1518,9 @@ table {
     }
     .box{
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: repeat(1,1fr);
         .item{
+            width: 100%;
             margin: 10px auto;
             display: grid;
             grid-template-columns: 25% 75%;
@@ -1499,7 +1531,7 @@ table {
             box-sizing: border-box;
             .imgset{
                 img{
-                    width: 100%;
+                    width:70px;
                     padding-right: 10px;
                 }
             }
@@ -1509,19 +1541,56 @@ table {
                 
             }
             .memic-link{
-                color: $green;
+                color: white;
                 cursor: pointer;
-            }
-            .memic-link:hover{
-                color:rgb(52, 134, 31);
             }
             .number,.text-group,.botton,.add-item{
                 display: flex;
                 align-self:center;
+                justify-content: center;
             }            
             
         }
-        
+        .item:last-child{
+            background-color: $green;
+            grid-template-columns: auto;
+            text-align: center;
+        }
+        .item:last-child:hover{
+            background-color: rgb(10, 70, 10);
+        }  
+    }
+}
+
+.content-snm{
+    margin-top: 20px;
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        .item-snm{
+            display: block;
+            .in-text{
+                background-color:$green-2;
+                border-radius: $border-radius;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 1.5rem;
+                padding: 1rem 1.5rem;
+                color: white;
+                .custom-img{
+                    .icon-custom-go{
+                        max-width: 40px;
+                    }
+                }
+            }
+            .in-text:hover{
+                background-color:$green;
+            }
+        }  
+    }
+    .bg-for-snb{
+        display: none;
     }
 }
 

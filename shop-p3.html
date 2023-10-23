@@ -95,13 +95,13 @@
                         <form action="#" method="get">
                             <label for="price">ราคา</label>
                             <div class="price">
-                                <input type="number" min="0" name="min" placeholder="ราคาต่ำสุด">
+                                <input type="number" id="price" min="0" name="min" placeholder="ราคาต่ำสุด">
                                 <span>-</span>
-                                <input type="number" name="max" name="max" placeholder="ราคาสูงสุด">
+                                <input type="number" name="max" placeholder="ราคาสูงสุด">
                             </div>
                             <label for="catgory">ประเภทต้นไม้</label>
                             <div class="catgory">
-                                <input type="checkbox" name="catgory" /><span>ต้นไม้มงคล</span><br/>
+                                <input type="checkbox" id="catgory" name="catgory" /><span>ต้นไม้มงคล</span><br/>
                                 <input type="checkbox" name="catgory" /><span>ไม้ยืนต้น</span><br/>
                                 <input type="checkbox" name="catgory" /><span>ไม้ดอก</span><br/>
                                 <input type="checkbox" name="catgory" /><span>ไม้ประดับ</span><br/>
@@ -112,12 +112,12 @@
                     <div class="shopping">
                         <div class="product-items">
                             <div class="product-item">
-                                <a href="#">
+                                <a href="./product-pot-detail.html">
                                     <img src="img/p-1.jpg" alt="pot-1" />
-                                    <h3 class="title">กระถามต้นไม้ 1</h3>
+                                    <h3 class="title">กระถางต้นไม้ 1</h3>
                                     <p class="price"><span>100</span> บาท</p>
                                 </a>
-                                <a href="#" class="buy">สั่งซื้อ</a>
+                                <a href="./cart.html" class="buy">สั่งซื้อ</a>
                             </div>
                             <div class="product-item">
                                 <a href="#">
@@ -176,12 +176,12 @@
                                 <a href="#" class="buy">สั่งซื้อ</a>
                             </div>
                             <div class="product-item">
-                                <a href="#">
+                                <a href="./product-seed-detail.html">
                                     <img src="img/product-17.jpg" alt="seed-1" />
                                     <h3 class="title">เมล็ดพันธ์ุ 1</h3>
                                     <p class="price"><span>100</span> บาท</p>
                                 </a>
-                                <a href="#" class="buy">สั่งซื้อ</a>
+                                <a href="./cart.html" class="buy">สั่งซื้อ</a>
                             </div>
                         </div>
                     </div>
@@ -231,6 +231,7 @@
                             <small>ฝ่ายจัดส่ง</small>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </main>
